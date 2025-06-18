@@ -521,15 +521,11 @@ const HeroSection = ({ onGetStarted = () => {} }: HeroSectionProps) => {
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Create Your Dream Store with a Simple{" "}
-                <span className="bg-gradient-to-r from-blue-500 via-sky-400 to-blue-600 bg-clip-text text-transparent">
-                  AI Prompt
-                </span>
+                The Easiest Way to Create a Store
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed font-medium">
-                Transform your ideas into a beautiful e-commerce storefront in
-                seconds. FreshFront uses AI to generate your logo, products,
-                collections, and content—all from a single prompt.
+                FreshFront uses AI to generate your logo, products, collections,
+                site content & ads–in minutes–all from a single prompt.
               </p>
               <div className="flex justify-center">
                 <motion.div

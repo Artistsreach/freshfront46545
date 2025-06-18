@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
@@ -9,6 +9,10 @@ import AIProductDiscovery from "./AIProductDiscovery";
 import IncreasedSalesPerformance from "./IncreasedSalesPerformance";
 import PrintOnDemand from "./PrintOnDemand";
 import ProductImageGeneration from "./ProductImageGeneration";
+import StoreCreation from "./StoreCreation";
+import SeeItInAction from "./SeeItInAction";
+import RolesAndBenefits from "./RolesAndBenefits";
+import EcosystemChart from "./EcosystemChart";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -22,6 +26,8 @@ import { Badge } from "./ui/badge";
 import { Edit, Image, Layers, ArrowRight, TrendingUp } from "lucide-react";
 
 const HomePage = () => {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
       <Header />
@@ -30,353 +36,19 @@ const HomePage = () => {
         <HeroSection />
       </div>
 
-      {/* Customization Tools Section */}
-      <section
-        id="features"
-        className="py-20 px-4 md:px-8 bg-gradient-to-br from-slate-50 via-blue-50/30 to-cyan-50/30 dark:from-gray-900 dark:via-gray-800/30 dark:to-blue-900/30 relative overflow-hidden"
-      >
-        {/* Modern background decorations */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-gradient-to-r from-blue-400 to-sky-400 blur-3xl animate-pulse" />
-          <div
-            className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-gradient-to-r from-sky-400 to-blue-400 blur-3xl animate-pulse"
-            style={{ animationDelay: "1s" }}
-          />
-          <div
-            className="absolute top-1/2 left-1/3 w-64 h-64 rounded-full bg-gradient-to-r from-blue-300 to-sky-300 blur-3xl animate-pulse"
-            style={{ animationDelay: "2s" }}
-          />
-        </div>
+      {/* Store Creation Section */}
+      <StoreCreation
+        id="store-creation-video"
+        activeVideo={activeVideo}
+        setActiveVideo={setActiveVideo}
+      />
 
-        {/* Geometric shapes */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-32 right-1/4 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-sky-300/10 rounded-2xl rotate-45 animate-float" />
-          <div
-            className="absolute bottom-40 left-1/3 w-16 h-16 bg-gradient-to-br from-sky-400/10 to-blue-300/10 rounded-xl rotate-12 animate-float"
-            style={{ animationDelay: "1s" }}
-          />
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-sky-100 dark:from-blue-900/30 dark:to-sky-900/30 px-6 py-3 rounded-full mb-6 backdrop-blur-sm border border-blue-200/50 dark:border-blue-700/50">
-              <Edit className="h-4 w-4 text-blue-600 dark:text-sky-400" />
-              <span className="text-sm font-semibold text-blue-800 dark:text-sky-300">
-                Customization Tools
-              </span>
-            </div>
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-sky-700 dark:from-white dark:via-blue-200 dark:to-sky-200 bg-clip-text text-transparent">
-              Edit Everything, Effortlessly
-            </h3>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Watch our powerful tools in action. No complex interfaces, just
-              intuitive editing that works.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            {[
-              {
-                title: "In-place Text Editing",
-                description:
-                  "Edit any text with a simple click - no complex interfaces needed",
-                mediaUrl:
-                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Inlinetextedit.gif",
-                mediaType: "gif",
-                icon: <Edit className="h-6 w-6 text-blue-600" />,
-                features: ["Click to edit", "Real-time preview", "Auto-save"],
-              },
-              {
-                title: "AI Content Creation",
-                description:
-                  "Generate professional content with AI-powered tools",
-                mediaUrl:
-                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//ContentCreation.mp4",
-                mediaType: "video",
-                icon: <Image className="h-6 w-6 text-purple-600" />,
-                features: [
-                  "AI-generated images",
-                  "Smart descriptions",
-                  "SEO optimization",
-                ],
-              },
-              {
-                title: "Product Visualization",
-                description:
-                  "Showcase products with immersive 3D views and AR features",
-                mediaUrl:
-                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//visualize%202.mp4",
-                mediaType: "video",
-                icon: <Layers className="h-6 w-6 text-green-600" />,
-                features: [
-                  "360° product views",
-                  "AR try-on",
-                  "Interactive demos",
-                ],
-              },
-            ].map((tool, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -10, scale: 1.02 }}
-                className="group"
-              >
-                <Card className="h-full overflow-hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl border-0 shadow-xl hover:shadow-2xl transition-all duration-500 ring-1 ring-black/5 dark:ring-white/10 group">
-                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-blue-50 to-sky-50 dark:from-gray-700 dark:to-gray-600">
-                    {tool.mediaType === "video" ? (
-                      <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      >
-                        <source src={tool.mediaUrl} type="video/mp4" />
-                      </video>
-                    ) : (
-                      <img
-                        src={tool.mediaUrl}
-                        alt={`${tool.title} demonstration`}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                    <div className="absolute top-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-3 rounded-2xl shadow-lg ring-1 ring-black/5 dark:ring-white/10 group-hover:scale-110 transition-transform duration-300">
-                      {tool.icon}
-                    </div>
-                  </div>
-                  <CardHeader className="pb-4">
-                    <CardTitle className="text-xl font-bold text-gray-900 dark:text-white">
-                      {tool.title}
-                    </CardTitle>
-                    <CardDescription className="text-gray-600 dark:text-gray-300">
-                      {tool.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {tool.features.map((feature, featureIndex) => (
-                        <li
-                          key={featureIndex}
-                          className="flex items-center text-sm"
-                        >
-                          <ArrowRight className="h-3 w-3 mr-2 text-primary" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                  <CardFooter>
-                    <Button
-                      variant="outline"
-                      className="w-full group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-sky-500 group-hover:text-white group-hover:border-transparent transition-all duration-300 border-blue-200 dark:border-sky-600"
-                    >
-                      Try {tool.title}
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Templates Section */}
-      <div id="templates">
-        <FeaturesGrid />
-      </div>
-
-      {/* AI Assistant Demo */}
-      <div id="ai-assistant">
-        <AIAssistantDemo />
-      </div>
-
-      {/* AI Product Discovery Section */}
-      <div id="product-discovery">
-        <AIProductDiscovery />
-      </div>
-
-      {/* Product Image Generation Section */}
-      <ProductImageGeneration />
-
-      {/* Print-on-Demand Section */}
-      <PrintOnDemand />
-
-      {/* Import Your Store Section */}
-      <div id="integrations">
-        <IntegrationSection />
-      </div>
-
-      {/* Get Started Section */}
-      <section className="py-20 px-4 md:px-8 bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/30 dark:from-gray-900 dark:via-blue-900/20 dark:to-indigo-900/20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-gradient-to-r from-blue-400 to-indigo-400 blur-3xl animate-pulse" />
-          <div
-            className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-gradient-to-r from-indigo-400 to-purple-400 blur-3xl animate-pulse"
-            style={{ animationDelay: "1s" }}
-          />
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <Badge
-              variant="secondary"
-              className="mb-6 px-4 py-2 text-sm font-medium bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 border-0"
-            >
-              GET STARTED
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-700 dark:from-white dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent">
-              Launch Your Store in 3 Simple Steps
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              From setup to sales in minutes. Our streamlined process gets you
-              selling faster than any other platform.
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {[
-              {
-                step: "01",
-                title: "Connect with Stripe",
-                description:
-                  "Set up payments and business operations instantly",
-                icon: (
-                  <svg
-                    className="h-8 w-8 text-blue-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                step: "02",
-                title: "Describe Your Vision",
-                description:
-                  "Tell our AI what kind of store you want to create",
-                icon: (
-                  <svg
-                    className="h-8 w-8 text-indigo-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                step: "03",
-                title: "Launch & Sell",
-                description:
-                  "Your store goes live with smart features that convert visitors into customers",
-                icon: (
-                  <svg
-                    className="h-8 w-8 text-purple-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                ),
-              },
-            ].map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                <Card className="h-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
-                  <CardContent className="p-8 text-center">
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
-                        {step.step}
-                      </div>
-                    </div>
-                    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      {step.icon}
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      {step.description}
-                    </p>
-                  </CardContent>
-                </Card>
-                {index < 2 && (
-                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                    <ArrowRight className="h-6 w-6 text-blue-400" />
-                  </div>
-                )}
-              </motion.div>
-            ))}
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 border-blue-200/50 dark:border-blue-700/50">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Already have a store?
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
-                  Import your existing Shopify, BigCommerce, or Etsy storefront
-                  and supercharge it with AI capabilities that your current
-                  platform can't offer, unlocking conversion rates you won't get
-                  anywhere else.
-                </p>
-                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white">
-                  Import Your Store
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
-        </div>
-      </section>
+      {/* See It In Action Section */}
+      <SeeItInAction
+        id="see-it-in-action-video"
+        activeVideo={activeVideo}
+        setActiveVideo={setActiveVideo}
+      />
 
       {/* Next-Generation Product Visualization Section */}
       <section className="py-20 px-4 md:px-8 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 dark:from-gray-900 dark:via-purple-900/20 dark:to-pink-900/20 relative overflow-hidden">
@@ -539,42 +211,211 @@ const HomePage = () => {
             >
               <Card className="overflow-hidden border-0 shadow-2xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
                 <CardContent className="p-0">
-                  <img
-                    src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80"
-                    alt="3D Product Visualization"
-                    className="w-full h-auto"
-                  />
+                  <video
+                    id="product-visualization-video"
+                    autoPlay
+                    loop
+                    muted={activeVideo !== "product-visualization-video"}
+                    playsInline
+                    className="w-full h-full object-cover"
+                    onViewportEnter={() => setActiveVideo("product-visualization-video")}
+                  >
+                    <source src="https://utdrojtjfwjcvuzmkooj.supabase.co/storage/v1/object/public/content//visualize.mp4" type="video/mp4" />
+                  </video>
                 </CardContent>
               </Card>
             </motion.div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <Card className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 border-purple-200/50 dark:border-purple-700/50">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Intelligent Store Assistant
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
-                  Every store gets a custom-trained AI chatbot that knows your
-                  products inside and out, answers customer questions instantly,
-                  and makes personalized recommendations that drive sales.
-                </p>
-                <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white">
-                  See AI Assistant Demo
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
-          </motion.div>
         </div>
       </section>
+
+      {/* Customization Tools Section */}
+      <section
+        id="features"
+        className="py-20 px-4 md:px-8 bg-gradient-to-br from-slate-50 via-blue-50/30 to-cyan-50/30 dark:from-gray-900 dark:via-gray-800/30 dark:to-blue-900/30 relative overflow-hidden"
+      >
+        {/* Modern background decorations */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-gradient-to-r from-blue-400 to-sky-400 blur-3xl animate-pulse" />
+          <div
+            className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-gradient-to-r from-sky-400 to-blue-400 blur-3xl animate-pulse"
+            style={{ animationDelay: "1s" }}
+          />
+          <div
+            className="absolute top-1/2 left-1/3 w-64 h-64 rounded-full bg-gradient-to-r from-blue-300 to-sky-300 blur-3xl animate-pulse"
+            style={{ animationDelay: "2s" }}
+          />
+        </div>
+
+        {/* Geometric shapes */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-32 right-1/4 w-20 h-20 bg-gradient-to-br from-blue-400/10 to-sky-300/10 rounded-2xl rotate-45 animate-float" />
+          <div
+            className="absolute bottom-40 left-1/3 w-16 h-16 bg-gradient-to-br from-sky-400/10 to-blue-300/10 rounded-xl rotate-12 animate-float"
+            style={{ animationDelay: "1s" }}
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-sky-100 dark:from-blue-900/30 dark:to-sky-900/30 px-6 py-3 rounded-full mb-6 backdrop-blur-sm border border-blue-200/50 dark:border-blue-700/50">
+              <Edit className="h-4 w-4 text-blue-600 dark:text-sky-400" />
+              <span className="text-sm font-semibold text-blue-800 dark:text-sky-300">
+                Customization Tools
+              </span>
+            </div>
+            <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-sky-700 dark:from-white dark:via-blue-200 dark:to-sky-200 bg-clip-text text-transparent">
+              Edit Everything, Effortlessly
+            </h3>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Watch our powerful tools in action. No complex interfaces, just
+              intuitive editing that works.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                title: "In-place Text Editing",
+                description:
+                  "Edit any text with a simple click - no complex interfaces needed",
+                mediaUrl:
+                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Inlinetextedit.gif",
+                mediaType: "gif",
+                icon: <Edit className="h-6 w-6 text-blue-600" />,
+                features: ["Click to edit", "Real-time preview", "Auto-save"],
+              },
+              {
+                title: "AI Content Creation",
+                description:
+                  "Generate professional content with AI-powered tools",
+                mediaUrl:
+                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//ContentCreation.mp4",
+                mediaType: "video",
+                icon: <Image className="h-6 w-6 text-purple-600" />,
+                features: [
+                  "AI-generated images",
+                  "Smart descriptions",
+                  "SEO optimization",
+                ],
+              },
+              {
+                title: "Product Visualization",
+                description:
+                  "Showcase products with immersive 3D views and AR features",
+                mediaUrl:
+                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//visualize%202.mp4",
+                mediaType: "video",
+                icon: <Layers className="h-6 w-6 text-green-600" />,
+                features: [
+                  "360° product views",
+                  "AR try-on",
+                  "Interactive demos",
+                ],
+              },
+            ].map((tool, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10, scale: 1.02 }}
+                className="group"
+              >
+                <Card className="h-full overflow-hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl border-0 shadow-xl hover:shadow-2xl transition-all duration-500 ring-1 ring-black/5 dark:ring-white/10 group">
+                  <div className="relative h-64 overflow-hidden bg-gradient-to-br from-blue-50 to-sky-50 dark:from-gray-700 dark:to-gray-600">
+                    {tool.mediaType === "video" ? (
+                      <video
+                        id={`tool-video-${index}`}
+                        autoPlay
+                        loop
+                        muted={activeVideo !== `tool-video-${index}`}
+                        playsInline
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        onViewportEnter={() => setActiveVideo(`tool-video-${index}`)}
+                      >
+                        <source src={tool.mediaUrl} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <img
+                        src={tool.mediaUrl}
+                        alt={`${tool.title} demonstration`}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                    <div className="absolute top-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-3 rounded-2xl shadow-lg ring-1 ring-black/5 dark:ring-white/10 group-hover:scale-110 transition-transform duration-300">
+                      {tool.icon}
+                    </div>
+                  </div>
+                  <CardHeader className="pb-4">
+                    <CardTitle className="text-xl font-bold text-gray-900 dark:text-white">
+                      {tool.title}
+                    </CardTitle>
+                    <CardDescription className="text-gray-600 dark:text-gray-300">
+                      {tool.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {tool.features.map((feature, featureIndex) => (
+                        <li
+                          key={featureIndex}
+                          className="flex items-center text-sm"
+                        >
+                          <ArrowRight className="h-3 w-3 mr-2 text-primary" />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  <CardFooter>
+                    <Button
+                      variant="outline"
+                      className="w-full group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-sky-500 group-hover:text-white group-hover:border-transparent transition-all duration-300 border-blue-200 dark:border-sky-600"
+                    >
+                      Try {tool.title}
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI Assistant Demo */}
+      <div id="ai-assistant">
+        <AIAssistantDemo />
+      </div>
+
+      {/* AI Product Discovery Section */}
+      <div id="product-discovery">
+        <AIProductDiscovery />
+      </div>
+
+      {/* Templates Section */}
+      <div id="templates">
+        <FeaturesGrid />
+      </div>
+
+      {/* Print-on-Demand Section */}
+      <PrintOnDemand />
+
+      <ProductImageGeneration />
+
+      {/* Import Your Store Section */}
+      <div id="integrations">
+        <IntegrationSection />
+      </div>
 
       {/* Everything You Need Section */}
       <section className="py-20 px-4 md:px-8 bg-gradient-to-br from-white via-green-50/30 to-emerald-50/30 dark:from-gray-900 dark:via-green-900/20 dark:to-emerald-900/20 relative overflow-hidden">
@@ -718,6 +559,144 @@ const HomePage = () => {
               </Card>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+
+      {/* Get Started Section */}
+      <section className="py-20 px-4 md:px-8 bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/30 dark:from-gray-900 dark:via-blue-900/20 dark:to-indigo-900/20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-gradient-to-r from-blue-400 to-indigo-400 blur-3xl animate-pulse" />
+          <div
+            className="absolute bottom-20 right-20 w-80 h-80 rounded-full bg-gradient-to-r from-indigo-400 to-purple-400 blur-3xl animate-pulse"
+            style={{ animationDelay: "1s" }}
+          />
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <Badge
+              variant="secondary"
+              className="mb-6 px-4 py-2 text-sm font-medium bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 border-0"
+            >
+              GET STARTED
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-700 dark:from-white dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent">
+              Launch Your Store in 3 Simple Steps
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              From setup to sales in minutes. Our streamlined process gets you
+              selling faster than any other platform.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                step: "01",
+                title: "Connect with Stripe",
+                description:
+                  "Set up payments and business operations instantly",
+                icon: (
+                  <svg
+                    className="h-8 w-8 text-blue-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                step: "02",
+                title: "Describe Your Vision",
+                description:
+                  "Tell our AI what kind of store you want to create",
+                icon: (
+                  <svg
+                    className="h-8 w-8 text-indigo-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                step: "03",
+                title: "Launch & Sell",
+                description:
+                  "Your store goes live with smart features that convert visitors into customers",
+                icon: (
+                  <svg
+                    className="h-8 w-8 text-purple-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                ),
+              },
+            ].map((step, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="relative"
+              >
+                <Card className="h-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                  <CardContent className="p-8 text-center">
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">
+                        {step.step}
+                      </div>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                      {step.icon}
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                      {step.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+                {index < 2 && (
+                  <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="h-6 w-6 text-blue-400" />
+                  </div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+
         </div>
       </section>
 
@@ -965,6 +944,22 @@ const HomePage = () => {
               </motion.div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Roles and Benefits Section */}
+      <RolesAndBenefits />
+
+      {/* Ecosystem Chart Section */}
+      <section>
+        <div className="max-w-7xl mx-auto py-20 px-4 md:px-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-sky-700 dark:from-white dark:via-blue-200 dark:to-sky-200 bg-clip-text text-transparent text-center">
+              FreshFront's E-commerce Ecosystem
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed text-center mb-12">
+              An overview of how creators, managers, and customers interact within the FreshFront platform.
+            </p>
+          <EcosystemChart />
         </div>
       </section>
 
