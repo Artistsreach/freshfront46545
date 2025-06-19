@@ -23,10 +23,11 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { Edit, Image, Layers, ArrowRight, TrendingUp } from "lucide-react";
+import { Edit, Image, Layers, ArrowRight, TrendingUp, X } from "lucide-react";
 
 const HomePage = () => {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
+  const [selectedNode, setSelectedNode] = useState<{ title: string; description: string } | null>(null);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
@@ -208,6 +209,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
+              onViewportEnter={() => setActiveVideo("product-visualization-video")}
             >
               <Card className="overflow-hidden border-0 shadow-2xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
                 <CardContent className="p-0">
@@ -218,7 +220,6 @@ const HomePage = () => {
                     muted={activeVideo !== "product-visualization-video"}
                     playsInline
                     className="w-full h-full object-cover"
-                    onViewportEnter={() => setActiveVideo("product-visualization-video")}
                   >
                     <source src="https://utdrojtjfwjcvuzmkooj.supabase.co/storage/v1/object/public/content//visualize.mp4" type="video/mp4" />
                   </video>
@@ -333,7 +334,7 @@ const HomePage = () => {
                 <Card className="h-full overflow-hidden bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl border-0 shadow-xl hover:shadow-2xl transition-all duration-500 ring-1 ring-black/5 dark:ring-white/10 group">
                   <div className="relative h-64 overflow-hidden bg-gradient-to-br from-blue-50 to-sky-50 dark:from-gray-700 dark:to-gray-600">
                     {tool.mediaType === "video" ? (
-                      <video
+                      <motion.video
                         id={`tool-video-${index}`}
                         autoPlay
                         loop
@@ -343,7 +344,7 @@ const HomePage = () => {
                         onViewportEnter={() => setActiveVideo(`tool-video-${index}`)}
                       >
                         <source src={tool.mediaUrl} type="video/mp4" />
-                      </video>
+                      </motion.video>
                     ) : (
                       <img
                         src={tool.mediaUrl}
@@ -731,14 +732,20 @@ const HomePage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
+              onViewportEnter={() => setActiveVideo("ecommerce-empire-video")}
             >
               <Card className="overflow-hidden border-0 shadow-2xl bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm">
                 <CardContent className="p-0">
-                  <img
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80"
-                    alt="Business Management Dashboard"
-                    className="w-full h-auto"
-                  />
+                  <video
+                    id="ecommerce-empire-video"
+                    autoPlay
+                    loop
+                    muted={activeVideo !== "ecommerce-empire-video"}
+                    playsInline
+                    className="w-full h-full object-cover"
+                  >
+                    <source src="https://utdrojtjfwjcvuzmkooj.supabase.co/storage/v1/object/public/content//391964797603680257.mov" type="video/mp4" />
+                  </video>
                 </CardContent>
               </Card>
             </motion.div>
@@ -959,12 +966,27 @@ const HomePage = () => {
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed text-center mb-12">
               An overview of how creators, managers, and customers interact within the FreshFront platform.
             </p>
-          <EcosystemChart />
+          <EcosystemChart setSelectedNode={setSelectedNode} />
         </div>
       </section>
 
       {/* Sales Performance Section */}
       <IncreasedSalesPerformance />
+
+      {/* Footer */}
+      {selectedNode && (
+        <Card className="fixed bottom-4 left-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-2xl w-96 z-50 border-2 border-blue-500">
+          <CardHeader className="flex flex-row items-center justify-between">
+            <CardTitle className="text-blue-600 dark:text-blue-400">{selectedNode.title}</CardTitle>
+            <button onClick={() => setSelectedNode(null)} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
+              <X />
+            </button>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-700 dark:text-gray-300">{selectedNode.description}</p>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Footer */}
       <footer className="bg-slate-900 dark:bg-gray-950 text-slate-300 dark:text-gray-400 py-12 px-4 md:px-8 lg:px-16">

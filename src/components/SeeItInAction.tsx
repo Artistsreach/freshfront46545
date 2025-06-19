@@ -55,12 +55,12 @@ const SeeItInAction = ({ id, activeVideo, setActiveVideo }: SeeItInActionProps) 
     const video = videoRef.current;
     if (!video) return;
 
-    if (isInView) {
+    if (activeVideo === id) {
       video.play().catch(() => setIsPlaying(false));
-    } else {
+    } else if (!isSticky) {
       video.pause();
     }
-  }, [isInView]);
+  }, [activeVideo, id, isSticky]);
 
   const togglePlay = () => {
     const video = videoRef.current;
@@ -128,8 +128,9 @@ const SeeItInAction = ({ id, activeVideo, setActiveVideo }: SeeItInActionProps) 
                     ref={videoRef}
                     id={id}
                     loop
+                    autoPlay
                     playsInline
-                    muted={activeVideo !== id}
+                    muted={activeVideo !== id && !isSticky}
                     className="w-full h-full object-cover"
                   >
                     <source

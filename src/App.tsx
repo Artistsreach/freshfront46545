@@ -5,6 +5,7 @@ import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Documentation from "./components/Documentation";
 import Blog from "./components/Blog";
+import InvestorPackage from "./components/InvestorPackage";
 import routes from "tempo-routes";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/investorpackage" element={<InvestorPackage />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>

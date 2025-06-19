@@ -73,9 +73,7 @@ const nodeDetails: { [key: string]: { title: string; description: string } } = {
   CUAI3: { title: 'Personalization', description: 'The shopping experience is personalized based on customer behavior and preferences.' },
 };
 
-const EcosystemChart: React.FC = () => {
-  const [selectedNode, setSelectedNode] = useState<{ title: string; description: string } | null>(null);
-
+const EcosystemChart: React.FC<{ setSelectedNode: (node: { title: string; description: string } | null) => void }> = ({ setSelectedNode }) => {
   const mermaidChart = `
     graph TD
         subgraph "Creator Onboarding"
@@ -281,26 +279,13 @@ const EcosystemChart: React.FC = () => {
 
     mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });
     mermaid.run();
-  }, []);
+  }, [setSelectedNode]);
 
   return (
     <div className="relative w-full bg-[#EFF6FF] dark:from-gray-900 dark:via-slate-800 dark:to-blue-900 overflow-hidden">
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="mermaid">{mermaidChart}</div>
       </div>
-      {selectedNode && (
-        <Card className="fixed bottom-4 left-4 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-2xl w-96 z-20 border-2 border-blue-500">
-          <CardHeader className="flex flex-row items-center justify-between">
-            <CardTitle className="text-blue-600 dark:text-blue-400">{selectedNode.title}</CardTitle>
-            <button onClick={() => setSelectedNode(null)} className="text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
-              <X />
-            </button>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-700 dark:text-gray-300">{selectedNode.description}</p>
-          </CardContent>
-        </Card>
-      )}
     </div>
   );
 };
