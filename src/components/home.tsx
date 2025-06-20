@@ -1072,7 +1072,7 @@ const HomePage = () => {
                 </li>
                 <li>
                   <a
-                    href="/investor-package"
+                    href="/investorpackage"
                     className="hover:text-white transition-colors cursor-pointer"
                   >
                     Investors
