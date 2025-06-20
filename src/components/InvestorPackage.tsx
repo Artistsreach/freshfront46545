@@ -65,10 +65,8 @@ const InvestorPackage = () => {
                 <li><a onClick={() => scrollToSection('opportunity')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Opportunity</a></li>
                 <li><a onClick={() => scrollToSection('solution')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Solution</a></li>
                 <li><a onClick={() => scrollToSection('market')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Market</a></li>
-                <li><a onClick={() => scrollToSection('financials')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Financials</a></li>
                 <li><a onClick={() => scrollToSection('budget')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Budget</a></li>
                 <li><a onClick={() => scrollToSection('team')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Team</a></li>
-                <li><a onClick={() => scrollToSection('timeline')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Timeline</a></li>
                 <li><a onClick={() => scrollToSection('ecosystem')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Ecosystem</a></li>
                 <li><a onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium cursor-pointer">Contact</a></li>
               </ul>
@@ -131,7 +129,6 @@ const InvestorPackage = () => {
               <ul className="list-disc list-inside space-y-2">
                 <li><strong>Ecommerce Platform Market:</strong> $9.4B in 2024, projected to reach $23.27B by 2030.</li>
                 <li><strong>Print on Demand Market:</strong> $10.2B in 2024, projected to reach $42.64B by 2030.</li>
-                <li><strong>Global Ecommerce Market:</strong> $18.8T in 2024, projected to reach $43.86T by 2030.</li>
               </ul>
             </CardContent>
           </Card>
@@ -141,8 +138,7 @@ const InvestorPackage = () => {
             <CardHeader><CardTitle>Serviceable Addressable Market (SAM)</CardTitle></CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-2">
-                <li><strong>Target Creators:</strong> 50M+ potential creators globally seeking e-commerce solutions.</li>
-                <li><strong>Average Creator GMV:</strong> $2,100 annually (conservative estimate).</li>
+                <li><strong>Target Creators:</strong> 50M+ professional creators globally. Source: Goldman Sachs "The Creator Economy" Report 2023</li>
                 <li><strong>SAM Value:</strong> $120B+ serviceable market.</li>
               </ul>
             </CardContent>
@@ -263,7 +259,7 @@ const InvestorPackage = () => {
 
       <Section id="solution">
         <SectionTitle>Product Deep Dive: Platform Walkthrough</SectionTitle>
-        <video autoPlay loop muted playsInline className="w-full h-full object-cover rounded-lg mb-12 mx-auto">
+        <video loop playsInline controls className="w-full h-full object-cover rounded-lg mb-12 mx-auto">
           <source src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/store_products%2FVideo.mp4?alt=media&token=bde1f316-49db-45cc-b6a0-e5d258dc2b66" type="video/mp4" />
         </video>
         <img src="https://utdrojtjfwjcvuzmkooj.supabase.co/storage/v1/object/public/content//Copy%20of%20FreshFront.zip%20-%206.png" alt="Platform Walkthrough" className="rounded-lg mb-12 mx-auto" />
@@ -480,6 +476,15 @@ const InvestorPackage = () => {
         </Card>
       </Section>
 
+      <Section id="ecosystem">
+        <SectionTitle>Ecosystem</SectionTitle>
+        <Card>
+          <CardContent className="pt-6">
+            <EcosystemChart setSelectedNode={setSelectedNode} />
+          </CardContent>
+        </Card>
+      </Section>
+
       <Section id="budget">
         <SectionTitle>Investment Requirement & Use of Funds</SectionTitle>
         <Card className="mb-8">
@@ -547,7 +552,7 @@ const InvestorPackage = () => {
                     <li>Part-Time Support: $6,000 (marketing and customer service)</li>
                     <li>General Admin: $2,000 (legal, accounting, business setup)</li>
                   </ul>
-                  <p className="text-xs mt-2"><strong>Strategy:</strong> Lean team structure with founders handling core development, minimal overhead burn</p>
+                  <p className="text-xs mt-2"><strong>Strategy:</strong> Lean team structure with founder experience handling core development with AI coding agent acceleration, minimal overhead burn</p>
                 </CardContent>
               </Card>
               <Card>
@@ -560,7 +565,7 @@ const InvestorPackage = () => {
                     <li>Development Tools: $600 (licenses and frameworks)</li>
                     <li>Infrastructure Setup: $1,900 (Firebase, hosting, databases)</li>
                   </ul>
-                  <p className="text-xs mt-2"><strong>Strategy:</strong> Modern tech stack optimized for rapid development and scaling</p>
+                  <p className="text-xs mt-2"><strong>Strategy:</strong> 90% of development complete. Bonus lap features, debugging, optimization. </p>
                 </CardContent>
               </Card>
               <Card>
@@ -574,7 +579,7 @@ const InvestorPackage = () => {
                     <li>Content Creation: $300 (Shotstack, Creatomate)</li>
                     <li>Supporting Services: $1,400 (email, monitoring, analytics)</li>
                   </ul>
-                  <p className="text-xs mt-2"><strong>Strategy:</strong> Best-in-class integrations for comprehensive automation</p>
+                  <p className="text-xs mt-2"><strong>Strategy:</strong> Best-in-class integrations for comprehensive automation and a reliable user experience</p>
                 </CardContent>
               </Card>
               <Card>
@@ -583,7 +588,7 @@ const InvestorPackage = () => {
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>Creator Launch Program: $14,500 (resources & incentives for early users, driving traffic to their stores as well as FF)</li>
                     <li>Digital Advertising: $28,000 (Meta, Google, TikTok, YouTube)</li>
-                    <li>Platform-Specific Marketing: $2,800 (LinkedIn, Twitter)</li>
+                    <li>Platform-Specific Marketing: $2,800 (LinkedIn, X (Twitter)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Aggressive customer acquisition during critical launch window</p>
                 </CardContent>
@@ -596,7 +601,7 @@ const InvestorPackage = () => {
                     <li>Database Systems: $2,500 (scalable data management)</li>
                     <li>API Costs: $2,100 (production-level integrations)</li>
                   </ul>
-                  <p className="text-xs mt-2"><strong>Strategy:</strong> Scalable infrastructure ready for rapid user growth</p>
+                  <p className="text-xs mt-2"><strong>Strategy:</strong> Reliable & Scalable infrastructure ready for rapid user growth</p>
                 </CardContent>
               </Card>
               <Card>
@@ -606,7 +611,7 @@ const InvestorPackage = () => {
                     <li>Ongoing Development: $9,200 (templates, features, optimization)</li>
                     <li>Quality Assurance: $2,300 (testing tools and services)</li>
                     <li>Continuous Marketing: $10,500 (ongoing ad spend)</li>
-                    <li>Content Creation: $4,200 (educational and marketing content)</li>
+                    <li>Content Creation: $4,200 (generative AI, educational and marketing content)</li>
                     <li>Security & Compliance: $400 (professional audits)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Continuous improvement and market expansion</p>
@@ -617,204 +622,6 @@ const InvestorPackage = () => {
         </Card>
       </Section>
 
-      <Section id="financial-projections">
-        <SectionTitle>Financial Model & Projections</SectionTitle>
-        <div className="space-y-8">
-          <Card>
-            <CardHeader><CardTitle>User Base & Revenue Snapshot</CardTitle></CardHeader>
-            <CardContent>
-              <p className="mb-4">The following model is based on a snapshot of 7,050 users (7,000 creators and 50 managers) to project annual revenue.</p>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">$3.57M</h4>
-                  <p className="text-sm text-gray-600">Gross Annual Revenue</p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">$3.52M</h4>
-                  <p className="text-sm text-gray-600">Projected Net Annual Earnings</p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">$507</h4>
-                  <p className="text-sm text-gray-600">Blended ARPU</p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">7,050</h4>
-                  <p className="text-sm text-gray-600">Total Users</p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">7,000</h4>
-                  <p className="text-sm text-gray-600">Total Creators</p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">50</h4>
-                  <p className="text-sm text-gray-600">Total Managers</p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">2,100</h4>
-                  <p className="text-sm text-gray-600">Paid Creators</p>
-                </div>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <h4 className="text-2xl font-bold">4,900</h4>
-                  <p className="text-sm text-gray-600">Free Creators</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader><CardTitle>Annual Revenue Breakdown</CardTitle></CardHeader>
-            <CardContent>
-              <div style={{ height: '400px' }}>
-                <ResponsiveBar
-                  data={[
-                    { source: 'Paid Creators', 'Revenue': 2446248 },
-                    { source: 'Free Creators', 'Revenue': 1036840 },
-                    { source: 'Managers', 'Revenue': 91127 },
-                  ]}
-                  keys={['Revenue']}
-                  indexBy="source"
-                  margin={{ top: 50, right: 60, bottom: 50, left: 90 }}
-                  padding={0.4}
-                  valueScale={{ type: 'linear' }}
-                  indexScale={{ type: 'band', round: true }}
-                  colors={{ scheme: 'nivo' }}
-                  borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
-                  axisTop={null}
-                  axisRight={null}
-                  axisBottom={{
-                    tickSize: 5,
-                    tickPadding: 5,
-                    tickRotation: 0,
-                    legend: 'Revenue Source',
-                    legendPosition: 'middle',
-                    legendOffset: 32,
-                  }}
-                  axisLeft={{
-                    tickSize: 5,
-                    tickPadding: 5,
-                    tickRotation: 0,
-                    legend: 'Revenue in USD',
-                    legendPosition: 'middle',
-                    legendOffset: -80,
-                    format: value => `$${(value / 1000000).toFixed(2)}M`,
-                  }}
-                  labelFormat="$.2s"
-                  labelSkipWidth={12}
-                  labelSkipHeight={12}
-                  labelTextColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
-                  animate={true}
-                />
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader><CardTitle>Detailed Financial Model</CardTitle></CardHeader>
-            <CardContent>
-              <Accordion type="single" collapsible className="w-full">
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>Section 1: User Base Overview</AccordionTrigger>
-                  <AccordionContent>
-                    <ul className="list-disc list-inside space-y-2 pl-4">
-                      <li><strong>Total Users:</strong> 7,050</li>
-                      <li><strong>Total Creators:</strong> 7,000 (5,000 Organic, 2,000 Manager-Onboarded)</li>
-                      <li><strong>Total Managers:</strong> 50</li>
-                      <li><strong>Creator Plan Split:</strong> 4,900 Free (70%), 2,100 Paid (30%)</li>
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-2">
-                  <AccordionTrigger>Section 2: Creator Revenue Breakdown</AccordionTrigger>
-                  <AccordionContent>
-                    <h4 className="font-bold mb-2">A. Paid Plan Creators (2,100 Users)</h4>
-                    <ul className="list-disc list-inside space-y-1 pl-4 mb-4">
-                      <li>Subscription Revenue: <strong>$755,748</strong></li>
-                      <li>Transaction Fee Revenue (2.9% + $0.30): <strong>$1,690,500</strong></li>
-                      <li>Total from Paid Users: <strong>$2,446,248</strong></li>
-                    </ul>
-                    <h4 className="font-bold mb-2">B. Free Plan Creators (4,900 Users)</h4>
-                    <ul className="list-disc list-inside space-y-1 pl-4">
-                      <li>Transaction Fee Revenue (2.9% + $0.30): <strong>$1,036,840</strong></li>
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-3">
-                  <AccordionTrigger>Section 3: Manager Revenue & Costs</AccordionTrigger>
-                  <AccordionContent>
-                    <h4 className="font-bold mb-2">A. Direct Revenue from Managers</h4>
-                    <ul className="list-disc list-inside space-y-1 pl-4 mb-4">
-                      <li>Subscription Revenue: <strong>$59,400</strong></li>
-                      <li>Transaction Fees (from Managers' own stores): <strong>$29,255</strong></li>
-                      <li>Total Direct Revenue: <strong>$88,655</strong></li>
-                    </ul>
-                    <h4 className="font-bold mb-2">B. Fees Delegated to Managers (Cost of Revenue)</h4>
-                    <ul className="list-disc list-inside space-y-1 pl-4">
-                      <li>Total Delegated Fees (1.2% of $4.12M managed GMV): <strong>-$49,440</strong></li>
-                    </ul>
-                    <h4 className="font-bold mt-4 mb-2">C. Revenue from Manager Withdrawal Fee</h4>
-                    <ul className="list-disc list-inside space-y-1 pl-4">
-                        <li>Revenue from Withdrawal Fee (5%): <strong>$2,472</strong></li>
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-4">
-                  <AccordionTrigger>Section 4: Final Annual Financial Summary</AccordionTrigger>
-                  <AccordionContent>
-                    <table className="w-full text-sm">
-                      <tbody>
-                        <tr><td className="p-2">Total Revenue from Paid Creators</td><td className="p-2 text-right">$2,446,248</td></tr>
-                        <tr><td className="p-2">Total Revenue from Free Creators</td><td className="p-2 text-right">$1,036,840</td></tr>
-                        <tr><td className="p-2">Total Direct Revenue from Managers</td><td className="p-2 text-right">$88,655</td></tr>
-                        <tr><td className="p-2">Revenue from Manager Withdrawal Fee</td><td className="p-2 text-right">$2,472</td></tr>
-                        <tr className="font-bold border-t"><td className="p-2">Gross Annual Revenue</td><td className="p-2 text-right">$3,574,215</td></tr>
-                        <tr><td className="p-2 text-red-600">Less: Fees Delegated to Managers</td><td className="p-2 text-right text-red-600">($49,440)</td></tr>
-                        <tr className="font-bold border-t"><td className="p-2">Projected Net Annual Earnings</td><td className="p-2 text-right">$3,524,775</td></tr>
-                      </tbody>
-                    </table>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardHeader><CardTitle>Return Projections</CardTitle></CardHeader>
-            <CardContent>
-              <h4 className="font-bold mb-2">Valuation Scenarios Based on Annual Revenue</h4>
-              <p className="text-xs text-gray-600 mb-4">Based on a Gross Annual Revenue of $3.57M.</p>
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="text-left">
-                    <th className="p-2">Scenario</th>
-                    <th className="p-2">Revenue Multiple</th>
-                    <th className="p-2">Projected Valuation</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td className="p-2">Conservative</td><td className="p-2">5x</td><td className="p-2">$17.85M</td></tr>
-                  <tr><td className="p-2">Moderate</td><td className="p-2">8x</td><td className="p-2">$28.56M</td></tr>
-                  <tr><td className="p-2">Optimistic</td><td className="p-2">12x</td><td className="p-2">$42.84M</td></tr>
-                </tbody>
-              </table>
-              <p className="text-xs mt-2">Note: ROI and IRR are not projected as this model is a single-year snapshot. Returns are calculated on a $113,900 investment basis.</p>
-            </CardContent>
-          </Card>
-        </div>
-          <Card className="mt-8">
-            <CardHeader><CardTitle>Exit Strategy Options. (why not?)</CardTitle></CardHeader>
-            <CardContent>
-              <h4 className="font-bold mb-2">Strategic Acquisition Targets</h4>
-              <ol className="list-decimal list-inside space-y-1">
-                <li><strong>Shopify:</strong> POD Creator solutions, AI capabilities & automation</li>
-                <li><strong>Apple:</strong> Integrate with Apple Pay and iPhone/iOS shopping experience</li>
-                <li><strong>Meta/TikTok:</strong> Enhance social commerce offerings</li>
-                <li><strong>Google:</strong> Strengthen Google Shopping and Cloud AI</li>
-                <li><strong>Amazon:</strong> Compete with Shopify with Creator economy and white label storefronts and expand AWS services</li>
-              </ol>
-            </CardContent>
-          </Card>
-      </Section>
-
       <Section id="risk">
         <SectionTitle>Risk Analysis & Mitigation</SectionTitle>
         <div className="grid md:grid-cols-2 gap-8">
@@ -823,11 +630,11 @@ const InvestorPackage = () => {
             <CardContent>
               <h4 className="font-bold">AI Model Dependencies</h4>
               <p><strong>Risk:</strong> Reliance on third-party AI services</p>
-              <p><strong>Mitigation:</strong> Multi-provider strategy, proprietary model development</p>
-              <p><strong>Timeline:</strong> Custom models in development by Month 18</p>
+              <p><strong>Mitigation:</strong> Multi-provider strategy with fallbacks in place, proprietary model development</p>
+              <p><strong>Timeline:</strong> Custom models in development by Month 18 with recursive training</p>
               <h4 className="font-bold mt-4">Scalability Challenges</h4>
               <p><strong>Risk:</strong> Infrastructure limitations during rapid growth</p>
-              <p><strong>Mitigation:</strong> Cloud-native architecture, auto-scaling systems (Google Cloud = excellent uptime)</p>
+              <p><strong>Mitigation:</strong> Cloud-native architecture, auto-scaling systems (Google Cloud)</p>
             </CardContent>
           </Card>
           <Card>
@@ -835,11 +642,11 @@ const InvestorPackage = () => {
             <CardContent>
               <h4 className="font-bold">Competition from Established Players</h4>
               <p><strong>Risk:</strong> Shopify, Adobe, or others launch competing AI features</p>
-              <p><strong>Mitigation:</strong> First-mover advantage, superior AI integration</p>
-              <p><strong>Competitive Moat:</strong> 18-month technology lead expected (modular scaffold systems in place and are constantly optimized, interchangeable with new AI models as they improve at an exponential rate)</p>
+              <p><strong>Mitigation:</strong> First-mover advantage, superior AI integration [we are the ChatGPT to Siri and the Anthropic to OpenAI]]</p>
+              <p><strong>Competitive Moat:</strong> 18-month technology lead expected (unique modular scaffold systems in place and are constantly optimized, interchangeable with new AI models as they improve at an exponential rate)</p>
               <h4 className="font-bold mt-4">Creator Market Saturation</h4>
-              <p><strong>Risk:</strong> Limited pool of potential creators</p>
-              <p><strong>Mitigation:</strong> Global expansion, adjacent market entry (B2B, services), Quality over quantity (targeting both creators with businesses and artists not yet monetized)</p>
+              <p><strong>Risk:</strong> Limited pool of potential creators ready for stores</p>
+              <p><strong>Mitigation:</strong> Influencer Marketing, Low barrier to entry, Quality over quantity (targeting both creators with businesses and artists not yet monetized)</p>
               <p><strong>Market Size:</strong> 50M+ addressable creators globally</p>
             </CardContent>
           </Card>
@@ -848,12 +655,12 @@ const InvestorPackage = () => {
             <CardContent>
               <h4 className="font-bold">Fulfillment Partner Dependencies</h4>
               <p><strong>Risk:</strong> Gooten, Printful or other partners change terms or fail</p>
-              <p><strong>Mitigation:</strong> Multi-provider integrations, direct partnerships, vertical integration with in-house POD supplier</p>
+              <p><strong>Mitigation:</strong> Alternatives in place for Creators/Managers with Multi-provider integrations, direct partnerships, vertical integration options with in-house POD supplier</p>
               <p><strong>Contingency:</strong> Budget includes multiple provider integration costs</p>
               <h4 className="font-bold mt-4">Regulatory Changes</h4>
               <p><strong>Risk:</strong> E-commerce, AI, or payment regulations impact operations</p>
-              <p><strong>Mitigation:</strong> Compliance-first approach, legal budget allocation, strict AI model system instructions, robust Stripe integrations</p>
-              <p><strong>Monitoring:</strong> Continuous regulatory tracking and adaptation</p>
+              <p><strong>Mitigation:</strong> Compliance-first approach, legal budget allocation, layer-filtered AI system instructions, robust Stripe integrations</p>
+              <p><strong>Monitoring:</strong> Continuous regulatory tracking and adaptation with 4 step approach (review, learn, apply, comply)</p>
             </CardContent>
           </Card>
           <Card>
@@ -861,11 +668,11 @@ const InvestorPackage = () => {
             <CardContent>
               <h4 className="font-bold">Customer Acquisition Costs</h4>
               <p><strong>Risk:</strong> Rising ad costs reduce unit economics</p>
-              <p><strong>Mitigation:</strong> Diversified marketing channels, organic growth, AI agent automation & optimization algorithms, improving ad creatives and adapting strategies</p>
-              <p><strong>Buffer:</strong> 39.76% marketing budget provides testing flexibility during optimization grace</p>
+              <p><strong>Mitigation:</strong> Diversified marketing channels, organic growth, AI pixel based marketing, improving ad creatives and adapting strategies</p>
+              <p><strong>Buffer:</strong> 39.76% marketing budget provides testing room during ad optimization & pixel warm up to find winning ad configurations</p>
               <h4 className="font-bold mt-4">Revenue Concentration</h4>
               <p><strong>Risk:</strong> Over-dependence on single revenue stream</p>
-              <p><strong>Mitigation:</strong> Multiple revenue sources, premium feature development, sustainable economy with multiple revenue streams for multiple roles flowing back to source</p>
+              <p><strong>Mitigation:</strong> Multiple revenue sources, predictable revenue systems, sustainable economy with multiple roles transacting</p>
               <p><strong>Diversification:</strong> 4 distinct revenue streams at launch</p>
             </CardContent>
           </Card>
@@ -880,11 +687,11 @@ const InvestorPackage = () => {
             <CardContent>
               <h4 className="font-bold">Core Algorithms</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
-                <li>Perfect Design Conforming: AI that creates designs perfectly fitted to print on demand product contours</li>
-                <li>Store Template Generation: Automated code generation of store templates based on niche analysis</li>
-                <li>Multi-Modal Content Creation: Integrated text, image, and video generation with gene/attribute tags</li>
-                <li>Conversion Optimization: Built in variant and product visualizer, 3D AR viewer, and realtime AI chat assistant with function calling and MCPs.</li>
-                <li>Magic Marketing Packages: AI system that generates converting ad copies using realtime search APIs and MCP for live market data.</li>
+                <li>POD Designs: Layered API calls that result in professional designs visualized on a large variety of print on demand products</li>
+                <li>Store Template Generation: Automated code generation of store templates based on store prompt, niche analysis & more</li>
+                <li>Multi-Modal Content Creation: Integrated text, image, and video generation with unique gene/attribute tag system</li>
+                <li>Conversion Optimization: Built in variant and product visualizer, 3D AR viewer, and realtime AI chat assistant with function calling and MCP integration.</li>
+                <li>Magic Marketing Packages: AI system that generates converting ad copies using realtime search APIs and MCP agents for live market data.</li>
               </ul>
             </CardContent>
           </Card>
@@ -893,16 +700,16 @@ const InvestorPackage = () => {
             <CardContent>
               <h4 className="font-bold">Proprietary Datasets</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
-                <li>E-commerce Performance Data: Store conversion and sales optimization</li>
-                <li>Design Effectiveness: Visual content consistency across products</li>
-                <li>Creator Behavior: User interaction and success pattern analysis</li>
-                <li>Market Intelligence: Trend prediction and demand forecasting</li>
+                <li>E-commerce Performance Data: Pixel heat maps, store conversion and sales optimization</li>
+                <li>Product Design Effectiveness: Realism and accuracy consistency across modern design trends and their placement on mockups</li>
+                <li>Creator Behavior: User persona demographics, origin, interaction and success pattern analysis</li>
+                <li>Market Intelligence: Social commerce trend prediction and market demand forecasting</li>
               </ul>
               <h4 className="font-bold mt-4">Competitive Intelligence</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
-                <li><strong>Technology Moat:</strong> 18-month estimated lead over competitors</li>
-                <li><strong>Network Effects:</strong> Creator and manager ecosystem creates switching costs</li>
-                <li><strong>Data Advantage:</strong> Each user interaction improves AI performance</li>
+                <li><strong>Technology Moat:</strong> Irreducible level of simplicity with one prompt achieving full store generation in under 3 minutes with efficient use flash models</li>
+                <li><strong>Network Effects:</strong> Creator generates store with AI, Managers promotes Creators products, Customer gets the product, Creators get the sale, Managers get the fee</li>
+                <li><strong>Data Advantage:</strong> Each user AI interaction improves the platform, whether it's a Customer visualizing a product, a Manager creating social media content or a Creator editing a design</li>
               </ul>
             </CardContent>
           </Card>
@@ -919,8 +726,8 @@ const InvestorPackage = () => {
                 <div>
                   <h4 className="font-bold">Phase 1: Creator Launch Program (Months 1-6)</h4>
                   <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-                    <li><strong>Target:</strong> 1,000 founding creators</li>
-                    <li><strong>Investment:</strong> $14,500 in incentives and support</li>
+                    <li><strong>Target:</strong> 100 founding creators</li>
+                    <li><strong>Investment:</strong> $14,500 in incentives and support to 100 chosen founders that apply</li>
                     <li><strong>Focus:</strong> Product-market fit validation, traffic and testimonials</li>
                     <li><strong>Success Metrics:</strong> 70%+ creator satisfaction, 50%+ monthly revenue growth</li>
                   </ul>
@@ -930,7 +737,7 @@ const InvestorPackage = () => {
                   <ul className="list-disc list-inside text-sm space-y-1 mt-2">
                     <li><strong>Investment:</strong> $28,000 in digital advertising</li>
                     <li><strong>Channels:</strong> Meta, Google, TikTok, YouTube advertising</li>
-                    <li><strong>Target:</strong> 10,000 active creators by Month 12</li>
+                    <li><strong>Target:</strong> 1,000 active creators by Month 12</li>
                     <li><strong>Success Metrics:</strong> CAC under $30, LTV/CAC ratio above 50:1</li>
                   </ul>
                 </div>
@@ -938,7 +745,7 @@ const InvestorPackage = () => {
                   <h4 className="font-bold">Phase 3: Viral Growth & Network Effects (Months 18+)</h4>
                   <ul className="list-disc list-inside text-sm space-y-1 mt-2">
                     <li><strong>Strategy:</strong> Creator referral programs, manager network expansion</li>
-                    <li><strong>Investment:</strong> Reduced paid acquisition, focus on retention</li>
+                    <li><strong>Investment:</strong> Stabilized paid acquisition, shift gears to loyalty/retention</li>
                     <li><strong>Target:</strong> 50%+ growth from organic channels</li>
                     <li><strong>Success Metrics:</strong> Viral coefficient above 1.2</li>
                   </ul>
@@ -973,60 +780,20 @@ const InvestorPackage = () => {
                 </ul>
                 <h4 className="font-bold mt-4">Community Building</h4>
                 <ul className="list-disc list-inside space-y-1 mt-2">
-                  <li>Creator Communities: Instagram, X (Twitter), Discord, Reddit</li>
+                  <li>Communities: FreshForums, Instagram, Facebook, Substack, X (Twitter), Discord, Reddit</li>
                   <li>Manager Networks: Professional service provider partnerships</li>
                   <li>Success Showcases: Monthly creator spotlights and case studies</li>
                   <li>Educational Resources: Academy, certification programs, workshops</li>
                 </ul>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader><CardTitle>Exit Strategy</CardTitle></CardHeader>
+              <CardContent>
+                <p>Possible exit scenarios include strategic acquisition by major technology companies such as Shopify, Apple, Meta/TikTok, Google, or Amazon, who may be interested in our AI capabilities, creator economy solutions, and social commerce integrations.</p>
+              </CardContent>
+            </Card>
           </div>
-        </div>
-      </Section>
-
-      <Section id="timeline">
-        <SectionTitle>Implementation Timeline</SectionTitle>
-        <img src="https://utdrojtjfwjcvuzmkooj.supabase.co/storage/v1/object/public/content//Copy%20of%20FreshFront.zip%20-%2022.png" alt="Roadmap" className="rounded-lg mb-12 mx-auto" />
-        <div className="space-y-8">
-          <Card>
-            <CardHeader><CardTitle>Development Roadmap</CardTitle></CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-4 gap-6">
-                <div>
-                  <h4 className="font-bold">Months 1-3: Foundation</h4>
-                  <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-                    <li>Week 1-2: Business setup, legal structure, banking</li>
-                    <li>Week 3-6: Complete UI/UX design and user flow mapping</li>
-                    <li>Week 7-12: Complete MVP development, advanced AI integrations</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold">Months 4-6: Integration & Testing</h4>
-                  <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-                    <li>Week 13-16: Complete Print-on-demand and payment integrations (Gooten/Stripe)</li>
-                    <li>Week 17-20: AI content generation testing and optimization</li>
-                    <li>Week 21-24: Beta testing with founding creators</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold">Months 7-9: Launch & Scale</h4>
-                  <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-                    <li>Week 25-28: Public launch, mobile app launch on Apple App Store & Google Play Store, marketing campaign activation</li>
-                    <li>Week 29-32: Performance optimization, feature additions</li>
-                    <li>Week 33-36: Manager network launch, scaling systems</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold">Months 10-12: Growth & Optimization</h4>
-                  <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-                    <li>Week 37-40: 400 monthly paid subscribers acquired</li>
-                    <li>Week 41-44: Team expansion, influencer marketing and partnerships</li>
-                    <li>Week 45-48: Series A preparation</li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </Section>
 
@@ -1039,7 +806,6 @@ const InvestorPackage = () => {
               <h4 className="font-bold">Equity Investment</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
                 <li><strong>Investment Amount:</strong> $113,900</li>
-                <li><strong>Equity Percentage:</strong> 8-12%</li>
                 <li><strong>Valuation:</strong> $950K - $1.42M pre-money</li>
                 <li><strong>Investment Type:</strong> Convertible note or Series Seed</li>
               </ul>
@@ -1066,15 +832,6 @@ const InvestorPackage = () => {
             </CardContent>
           </Card>
         </div>
-      </Section>
-
-      <Section id="ecosystem">
-        <SectionTitle>Ecosystem</SectionTitle>
-        <Card>
-          <CardContent className="pt-6">
-            <EcosystemChart setSelectedNode={setSelectedNode} />
-          </CardContent>
-        </Card>
       </Section>
     </div>
   );
