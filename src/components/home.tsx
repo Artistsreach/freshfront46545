@@ -1070,6 +1070,14 @@ const HomePage = () => {
                     Privacy policy
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/investor-package"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Investors
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

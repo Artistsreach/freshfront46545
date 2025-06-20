@@ -34,12 +34,104 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
 );
 
 const InvestorPackage = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const [selectedNode, setSelectedNode] = useState<{ title: string; description: string } | null>(null);
 
   useEffect(() => {
-    mermaid.initialize({ startOnLoad: true });
-    mermaid.contentLoaded();
-  }, []);
+    if (isAuthenticated) {
+      mermaid.initialize({ startOnLoad: true });
+      mermaid.contentLoaded();
+    }
+  }, [isAuthenticated]);
+
+  const handlePasswordSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (password === 'Fresh25') {
+      setIsAuthenticated(true);
+      setError('');
+    } else {
+      setError('Incorrect password');
+    }
+  };
+
+  const MatrixEffect = () => {
+    const canvasRef = React.useRef<HTMLCanvasElement>(null);
+
+    useEffect(() => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const letters = 'FRESHFRONT'.split('');
+      const fontSize = 16;
+      const columns = Math.floor(canvas.width / fontSize);
+      const drops: number[] = Array(columns).fill(1);
+
+      function draw() {
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = '#0f0';
+        ctx.font = `${fontSize}px monospace`;
+
+        for (let i = 0; i < drops.length; i++) {
+          const text = letters[Math.floor(Math.random() * letters.length)];
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+          if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          drops[i]++;
+        }
+      }
+
+      const interval = setInterval(draw, 33);
+      return () => clearInterval(interval);
+    }, []);
+
+    return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full z-0" />;
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div className="relative flex items-center justify-center h-screen bg-black font-mono text-green-400" style={{ fontFamily: '"Lucida Console", monospace' }}>
+        <MatrixEffect />
+        <div className="relative z-10 w-full max-w-2xl p-8 border-2 border-green-400 rounded-lg bg-black/50 backdrop-blur-sm">
+          <div className="animate-pulse text-center text-lg mb-4">FreshFront Investor Portal</div>
+          <p className="mb-2"> Access is restricted...</p>
+          <p className="mb-4"> Please provide credentials.</p>
+          <form onSubmit={handlePasswordSubmit} className="flex items-center">
+            <label htmlFor="password-input" className="mr-2"> Enter Password:</label>
+            <input
+              id="password-input"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="flex-grow bg-transparent border-none focus:ring-0 text-green-400"
+              autoFocus
+            />
+            <span className="w-2 h-5 bg-green-400 animate-blink"></span>
+          </form>
+          {error && <p className="text-red-500 text-sm mt-4"> {error}</p>}
+        </div>
+        <style>{`
+          @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+          }
+          .animate-blink {
+            animation: blink 1s step-end infinite;
+          }
+        `}</style>
+      </div>
+    );
+  }
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -152,7 +244,7 @@ const InvestorPackage = () => {
               <ul className="list-disc list-inside space-y-2">
                 <li><strong>Target User Base:</strong> 7,250 users (7,000 creators, 250 managers).</li>
                 <li><strong>Projected Platform GMV:</strong> $32.8M annually.</li>
-                <li><strong>Projected Net Revenue:</strong> $4.35M annually.</li>
+                <li><strong>Projected Net Revenue:</strong> $4.34M annually.</li>
               </ul>
               <Dialog>
                 <DialogTrigger asChild>
@@ -245,9 +337,9 @@ const InvestorPackage = () => {
                     <h5 className="font-semibold mt-4 mb-2">C. Revenue from Manager Withdrawal Fee</h5>
                     <p><strong>Assumptions:</strong></p>
                     <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Platform takes a 5% fee when managers withdraw their total delegated fees.</li>
+                        <li>Platform takes a 2.9% fee when managers withdraw their total balance.</li>
                     </ul>
-                    <p><strong>Revenue from Withdrawal Fee:</strong> $111,600 (Total Delegated Fees) × 5% = $5,580</p>
+                    <p><strong>Revenue from Withdrawal Fee:</strong> $111,600 (Total Delegated Fees) × 2.9% = $3,236</p>
 
                     <h4 className="font-bold mt-6 mb-2">Section 4: Final Annual Financial Summary</h4>
                     <p>This summary consolidates all revenue streams and costs to determine the platform's net annual earnings.</p>
@@ -255,11 +347,11 @@ const InvestorPackage = () => {
                         <li>Total Revenue from Paid Creators: $2,872,548</li>
                         <li>Total Revenue from Free Creators: $1,136,310</li>
                         <li>Total Direct Revenue from Managers: $443,275</li>
-                        <li>Revenue from Manager Withdrawal Fee: $5,580</li>
+                        <li>Revenue from Manager Withdrawal Fee: $3,236</li>
                     </ul>
-                    <p><strong>Gross Annual Revenue:</strong> $2,872,548 + $1,136,310 + $443,275 + $5,580 = $4,457,713</p>
+                    <p><strong>Gross Annual Revenue:</strong> $2,872,548 + $1,136,310 + $443,275 + $3,236 = $4,455,369</p>
                     <p><strong>Subtract: Fees Delegated to Managers (Cost):</strong> -$111,600</p>
-                    <p><strong>Projected Net Annual Earnings: $4,457,713 - $111,600 = $4,346,113</strong></p>
+                    <p><strong>Projected Net Annual Earnings: $4,455,369 - $111,600 = $4,343,769</strong></p>
                   </div>
                 </DialogContent>
               </Dialog>
@@ -270,7 +362,7 @@ const InvestorPackage = () => {
             <CardContent>
               <ul className="list-disc list-inside space-y-2">
                 <li><strong>Customer Acquisition Cost (CAC):</strong> $28 (blended average).</li>
-                <li><strong>Lifetime Value (LTV):</strong> $1,589 (Subscription + fees).</li>
+                <li><strong>Lifetime Value (LTV):</strong> $1,591 (Subscription + fees).</li>
                 <li><strong>LTV/CAC Ratio:</strong> 57:1 (demonstrating significant return on customer acquisition).</li>
                 <li><strong>Payback Period:</strong> 1 month</li>
               </ul>
@@ -607,7 +699,7 @@ const InvestorPackage = () => {
                 { stream: 'Paid Creators', revenue: 2872548 },
                 { stream: 'Free Creators', revenue: 1136310 },
                 { stream: 'Managers', revenue: 443275 },
-                { stream: 'Withdrawal Fees', revenue: 5580 },
+                { stream: 'Withdrawal Fees', revenue: 3236 },
                 { stream: 'Delegated Fees', revenue: -111600 },
               ]}
               keys={['revenue']}
@@ -676,7 +768,7 @@ const InvestorPackage = () => {
               <li><strong>Creator Subscription Fee:</strong> $29.99/month</li>
               <li><strong>Manager Subscription Fee:</strong> $99/month</li>
               <li><strong>Standard Transaction Fee:</strong> 2.9% + $0.30 per transaction</li>
-              <li><strong>Manager Withdrawal Fee:</strong> 5% (Managers only)</li>
+              <li><strong>Manager Withdrawal Fee:</strong> 2.9% (Managers only)</li>
               <li><strong>Creator Withdrawal Fee:</strong> 0%</li>
               <li><strong>Manager Fee Delegation:</strong> Managers can set a custom fee (1-5% typical) on their referred creators' sales, which is deducted from the creators' earnings and paid to the manager.</li>
             </ul>
@@ -685,7 +777,7 @@ const InvestorPackage = () => {
               <li><strong>Paid Creators:</strong> 2,100 users * $29.99/month * 12 months + (2,100 users * $12,000 * 0.029) + (2,100 users * 2,200 * $0.30) = $2,872,548</li>
               <li><strong>Free Creators:</strong> (4,900 users * $1,500 * 0.029) + (4,900 users * 628 * $0.30) = $1,136,310</li>
               <li><strong>Managers:</strong> 250 managers * $99/month * 12 months + (50 stores * $25,000 * 0.029) + (50 stores * 7,335 * $0.30) = $443,275</li>
-              <li><strong>Manager Withdrawal Fee:</strong> $111,600 * 0.05 = $5,580</li>
+              <li><strong>Manager Withdrawal Fee:</strong> $111,600 * 0.029 = $3,236</li>
             </ul>
           </CardContent>
         </Card>
