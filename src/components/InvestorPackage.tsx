@@ -4,6 +4,7 @@ import mermaid from 'mermaid';
 import EcosystemChart from './EcosystemChart';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { X } from 'lucide-react';
@@ -94,13 +95,13 @@ const InvestorPackage = () => {
             <Card>
               <CardHeader><CardTitle>The Opportunity</CardTitle></CardHeader>
               <CardContent>
-                <p>The global print-on-demand market is projected to reach $42.64 billion by 2030, growing at 33.1% CAGR. Despite this massive opportunity, current solutions require significant technical expertise, leaving millions of potential creators unable to participate. FreshFront eliminates these barriers through advanced AI automation, creating the first truly accessible e-commerce creation platform.</p>
+                <p>The global print-on-demand market is projected to reach $42.64 billion by 2030, growing at 33.1% CAGR, while AI is projected to grow at a CAGR of 35.9% to 1.81T. Despite this massive opportunity, current solutions require significant technical expertise, leaving millions of potential creators unable to participate in the benefits of AI Ecommerce. FreshFront eliminates these barriers creating the first truly accessible e-commerce platform with integrated AI features for store owners and their customers. AI-driven personalization and predictive analytics are key to enhancing the customer journey, improving conversion rates, and increasing customer lifetime value.</p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader><CardTitle>Our Solution</CardTitle></CardHeader>
               <CardContent>
-                <p>FreshFront is an AI-first platform that transforms anyone into an e-commerce entrepreneur in minutes, not months. Our proprietary AI stack generates complete stores, designs, content, and marketing materials while handling all technical complexity. The platform creates a virtuous ecosystem where creators, managers, and customers all benefit from shared success.</p>
+                <p>FreshFront is an AI-first platform that transforms anyone into an e-commerce entrepreneur in minutes, not months. Our proprietary AI stack generates complete stores; designs, products, collections, site content, and marketing materials from a single prompt. The platform creates a virtuous ecosystem where creators, managers, and customers all benefit from shared success.</p>
               </CardContent>
             </Card>
           </div>
@@ -109,11 +110,11 @@ const InvestorPackage = () => {
           <CardHeader><CardTitle>Key Investment Highlights</CardTitle></CardHeader>
           <CardContent>
             <ul className="list-disc list-inside space-y-2">
-              <li><strong>Market Leadership Position:</strong> First-mover advantage in AI-automated e-commerce creation</li>
+              <li><strong>Market Leadership Position:</strong> First-mover advantage in AI Ecommerce</li>
               <li><strong>Scalable Revenue Model:</strong> Multiple revenue streams with 85%+ gross margins</li>
               <li><strong>Lean Capital Requirements:</strong> $113,900 marketing focused budget (founder is lead developer)
               </li>
-              <li><strong>Market Ready:</strong> Finished product ready to go to market after rigorous production 'confidence' tests</li>
+              <li><strong>Market Ready:</strong> Finished product ready to go to market after rigorous production tests</li>
               <li><strong>Clear Path to Profitability:</strong> Revenue generation starts immediately upon launch</li>
             </ul>
           </CardContent>
@@ -129,6 +130,7 @@ const InvestorPackage = () => {
               <ul className="list-disc list-inside space-y-2">
                 <li><strong>Ecommerce Platform Market:</strong> $9.4B in 2024, projected to reach $23.27B by 2030.</li>
                 <li><strong>Print on Demand Market:</strong> $10.2B in 2024, projected to reach $42.64B by 2030.</li>
+                <li><strong>Global Artificial Intelligence Market:</strong> $279.22B in 2024, projected to reach $1.81T by 2030.</li>
               </ul>
             </CardContent>
           </Card>
@@ -138,8 +140,9 @@ const InvestorPackage = () => {
             <CardHeader><CardTitle>Serviceable Addressable Market (SAM)</CardTitle></CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-2">
-                <li><strong>Target Creators:</strong> 50M+ professional creators globally. Source: Goldman Sachs "The Creator Economy" Report 2023</li>
-                <li><strong>SAM Value:</strong> $120B+ serviceable market.</li>
+                <li><strong>Target Creators:</strong> Potential 50M+ professional creators globally with audiences who would buy merch. Source: Goldman Sachs "The Creator Economy" Report 2023</li>
+                <li><strong>28 Million Ecommerce stores online.</strong></li>
+                <li><strong>SAM Value:</strong> $150B+ serviceable market.</li>
               </ul>
             </CardContent>
           </Card>
@@ -147,10 +150,119 @@ const InvestorPackage = () => {
             <CardHeader><CardTitle>Year 3 Snapshot Projection</CardTitle></CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-2">
-                <li><strong>Target User Base:</strong> 14,100 users (14,000 creators, 100 managers).</li>
-                <li><strong>Projected Platform GMV:</strong> $29.34M annually.</li>
-                <li><strong>Projected Net Revenue:</strong> $7.04M annually.</li>
+                <li><strong>Target User Base:</strong> 7,250 users (7,000 creators, 250 managers).</li>
+                <li><strong>Projected Platform GMV:</strong> $32.8M annually.</li>
+                <li><strong>Projected Net Revenue:</strong> $4.35M annually.</li>
               </ul>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="outline" className="mt-4">View Model</Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-4xl h-5/6 overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle>Platform Financial Model</DialogTitle>
+                  </DialogHeader>
+                  <div className="space-y-6">
+                    <p className="mb-4">This document outlines the projected annual revenue for the platform based on a three-tiered user structure: Free Creators, Paid Creators, and Managers. The model accounts for subscription fees, transaction fees, and a revised fee delegation system where managers set their own rates.</p>
+            
+                    <h4 className="font-bold mt-6 mb-2">Section 1: User Base Overview</h4>
+                    <p>The total user base is composed of 7,250 individuals, broken down as follows:</p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                      <li>Total Creators: 7,000</li>
+                      <li>Organic Creators: 5,000</li>
+                      <li>Manager-Onboarded Creators: 2,000</li>
+                      <li>Total Managers: 250</li>
+                    </ul>
+                    <p>The creator base is segmented into Free and Paid plans, maintaining a 70/30 split:</p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                      <li>Free Plan Creators: 70% of 7,000 = 4,900 users</li>
+                      <li>Paid Plan Creators: 30% of 7,000 = 2,100 users</li>
+                    </ul>
+
+                    <h4 className="font-bold mt-6 mb-2">Section 2: Creator Revenue Breakdown</h4>
+                    <p>This section details the revenue generated directly from the 7,000 creators.</p>
+                    <h5 className="font-semibold mt-4 mb-2">A. Paid Plan Creators (2,100 Users)</h5>
+                    <p><strong>Assumptions:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                      <li>Subscription Fee: $29.99/month</li>
+                      <li>Average Annual Earnings per User: $12,000</li>
+                      <li>Average Annual Transactions per User: 2,200</li>
+                    </ul>
+                    <p><strong>Subscription Revenue:</strong> 2,100 users × $29.99/month × 12 months = $755,748</p>
+                    <p><strong>Transaction Fee Revenue:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                      <li>Total Gross Earnings: 2,100 users × $12,000 = $25,200,000</li>
+                      <li>Percentage Fee (2.9%): $25,200,000 × 0.029 = $730,800</li>
+                      <li>Fixed Fee ($0.30): (2,100 users × 2,200 transactions) × $0.30 = $1,386,000</li>
+                    </ul>
+                    <p><strong>Total Annual Revenue from Paid Plan:</strong> $755,748 + $730,800 + $1,386,000 = $2,872,548</p>
+
+                    <h5 className="font-semibold mt-4 mb-2">B. Free Plan Creators (4,900 Users)</h5>
+                    <p><strong>Assumptions:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>Average Annual Earnings per User: $1,500</li>
+                        <li>Average Annual Transactions per User: 628</li>
+                    </ul>
+                    <p><strong>Transaction Fee Revenue:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>Total Gross Earnings: 4,900 users × $1,500 = $7,350,000</li>
+                        <li>Percentage Fee (2.9%): $7,350,000 × 0.029 = $213,150</li>
+                        <li>Fixed Fee ($0.30): (4,900 users × 628 transactions) × $0.30 = $923,160</li>
+                    </ul>
+                    <p><strong>Total Annual Revenue from Free Plan:</strong> $213,150 + $923,160 = $1,136,310</p>
+
+                    <h4 className="font-bold mt-6 mb-2">Section 3: Manager Impact & Fee Delegation</h4>
+                    <p>This section analyzes the revenue and costs associated with the 250 managers.</p>
+                    <h5 className="font-semibold mt-4 mb-2">A. Direct Revenue from Managers</h5>
+                    <p><strong>Assumptions:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>Subscription Fee: $99/month</li>
+                        <li>50 managers (20%) run a personal store, each earning $25,000 annually.</li>
+                    </ul>
+                    <p><strong>Manager Subscription Revenue:</strong> 250 managers × $99/month × 12 months = $297,000</p>
+                    <p><strong>Transaction Fees from Managers' Personal Stores:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>Total Gross Earnings: 50 stores × $25,000 = $1,250,000</li>
+                        <li>Percentage Fee (2.9%): $1,250,000 × 0.029 = $36,250</li>
+                        <li>Fixed Fee ($0.30): (50 stores × 7,335 transactions) × $0.30 = $110,025</li>
+                    </ul>
+                    <p><strong>Total Direct Annual Revenue from Managers:</strong> $297,000 + $36,250 + $110,025 = $443,275</p>
+
+                    <h5 className="font-semibold mt-4 mb-2">B. Fees Delegated to Managers (Cost of Revenue)</h5>
+                    <p><strong>Assumptions:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>Managers can set their own fee. For this model, we assume an average delegated fee of 1.2%.</li>
+                        <li>Managers onboarded 2,000 creators (600 Paid, 1,400 Free).</li>
+                    </ul>
+                    <p><strong>Gross Sales from Onboarded Users:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>From Paid Users: 600 users × $12,000 = $7,200,000</li>
+                        <li>From Free Users: 1,400 users × $1,500 = $2,100,000</li>
+                        <li>Total Managed Sales = $9,300,000</li>
+                    </ul>
+                    <p><strong>Total Fees Delegated to Managers:</strong> $9,300,000 × 1.2% (average fee) = -$111,600</p>
+
+                    <h5 className="font-semibold mt-4 mb-2">C. Revenue from Manager Withdrawal Fee</h5>
+                    <p><strong>Assumptions:</strong></p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>Platform takes a 5% fee when managers withdraw their total delegated fees.</li>
+                    </ul>
+                    <p><strong>Revenue from Withdrawal Fee:</strong> $111,600 (Total Delegated Fees) × 5% = $5,580</p>
+
+                    <h4 className="font-bold mt-6 mb-2">Section 4: Final Annual Financial Summary</h4>
+                    <p>This summary consolidates all revenue streams and costs to determine the platform's net annual earnings.</p>
+                    <ul className="list-disc list-inside ml-4 mb-4">
+                        <li>Total Revenue from Paid Creators: $2,872,548</li>
+                        <li>Total Revenue from Free Creators: $1,136,310</li>
+                        <li>Total Direct Revenue from Managers: $443,275</li>
+                        <li>Revenue from Manager Withdrawal Fee: $5,580</li>
+                    </ul>
+                    <p><strong>Gross Annual Revenue:</strong> $2,872,548 + $1,136,310 + $443,275 + $5,580 = $4,457,713</p>
+                    <p><strong>Subtract: Fees Delegated to Managers (Cost):</strong> -$111,600</p>
+                    <p><strong>Projected Net Annual Earnings: $4,457,713 - $111,600 = $4,346,113</strong></p>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </CardContent>
           </Card>
           <Card>
@@ -158,8 +270,8 @@ const InvestorPackage = () => {
             <CardContent>
               <ul className="list-disc list-inside space-y-2">
                 <li><strong>Customer Acquisition Cost (CAC):</strong> $28 (blended average).</li>
-                <li><strong>Lifetime Value (LTV):</strong> $1,503 (Subscription + fees).</li>
-                <li><strong>LTV/CAC Ratio:</strong> 54:1 (demonstrating significant return on customer acquisition).</li>
+                <li><strong>Lifetime Value (LTV):</strong> $1,589 (Subscription + fees).</li>
+                <li><strong>LTV/CAC Ratio:</strong> 57:1 (demonstrating significant return on customer acquisition).</li>
                 <li><strong>Payback Period:</strong> 1 month</li>
               </ul>
             </CardContent>
@@ -190,17 +302,6 @@ const InvestorPackage = () => {
                   <li><strong>Etsy:</strong> no customization, saturated marketplace</li>
                   <li><strong>WooCommerce/BigCommerce:</strong> relevant for scaling, not to Gen-Z Creators</li>
                   <li><strong>Square/TeeSpring:</strong> basic, lacks AI features</li>
-              </ul>
-              <h4 className="font-bold mt-6 mb-2">Solutions for Creators, for their Customers</h4>
-              <ul className="list-disc list-inside space-y-2">
-                  <li>Al-enhanced Product Pages</li>
-                  <li>Realtime Al Support Assistants</li>
-                  <li>Al Product Visualization</li>
-                  <li>Templates designed for Social Media conversions</li>
-                  <li>Instant Prompt to Store</li>
-                  <li>AI Customaztion & Editing Tool</li>
-                  <li>Al Content & Product Tools</li>
-                  <li>Low Fees and Pricing</li>
               </ul>
             </CardContent>
           </Card>
@@ -252,6 +353,17 @@ const InvestorPackage = () => {
                 <li><strong>Manager Network:</strong> Unique scaling model through service providers</li>
                 <li><strong>Greater Creator Economy:</strong> Starting the trend of Social Media influencer POD merch</li>
               </ol>
+              <h4 className="font-bold mt-6 mb-2">Solutions for Creators, for their Customers</h4>
+              <ul className="list-disc list-inside space-y-2">
+                  <li>Al-enhanced Product Pages</li>
+                  <li>Realtime Al Support Assistants</li>
+                  <li>Al Product Visualization</li>
+                  <li>Templates designed for Social Media conversions</li>
+                  <li>Instant Prompt to Store</li>
+                  <li>AI Customaztion & Editing Tool</li>
+                  <li>Al Content & Product Tools</li>
+                  <li>Low Fees and Pricing</li>
+              </ul>
             </CardContent>
           </Card>
         </div>
@@ -485,6 +597,100 @@ const InvestorPackage = () => {
         </Card>
       </Section>
 
+      <Section id="financial-projections">
+        <SectionTitle>Financial Projections</SectionTitle>
+        <Card>
+          <CardHeader><CardTitle>Annual Revenue Projection</CardTitle></CardHeader>
+          <CardContent style={{ height: '500px' }}>
+            <ResponsiveBar
+              data={[
+                { stream: 'Paid Creators', revenue: 2872548 },
+                { stream: 'Free Creators', revenue: 1136310 },
+                { stream: 'Managers', revenue: 443275 },
+                { stream: 'Withdrawal Fees', revenue: 5580 },
+                { stream: 'Delegated Fees', revenue: -111600 },
+              ]}
+              keys={['revenue']}
+              indexBy="stream"
+              margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+              padding={0.3}
+              valueScale={{ type: 'linear' }}
+              indexScale={{ type: 'band', round: true }}
+              colors={'#017852'}
+              borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
+              axisTop={null}
+              axisRight={null}
+              axisBottom={{
+                tickSize: 5,
+                tickPadding: 5,
+                tickRotation: 0,
+                legend: 'Revenue Stream',
+                legendPosition: 'middle',
+                legendOffset: 32,
+              }}
+              axisLeft={{
+                tickSize: 5,
+                tickPadding: 5,
+                tickRotation: 0,
+                legend: 'Revenue (USD)',
+                legendPosition: 'middle',
+                legendOffset: -40,
+              }}
+              labelSkipWidth={12}
+              labelSkipHeight={12}
+              labelTextColor={'white'}
+              legends={[
+                {
+                  dataFrom: 'keys',
+                  anchor: 'bottom-right',
+                  direction: 'column',
+                  justify: false,
+                  translateX: 120,
+                  translateY: 0,
+                  itemsSpacing: 2,
+                  itemWidth: 100,
+                  itemHeight: 20,
+                  itemDirection: 'left-to-right',
+                  itemOpacity: 0.85,
+                  symbolSize: 20,
+                  effects: [
+                    {
+                      on: 'hover',
+                      style: {
+                        itemOpacity: 1,
+                      },
+                    },
+                  ],
+                },
+              ]}
+              animate={true}
+            />
+          </CardContent>
+        </Card>
+        <Card className="mt-8">
+          <CardHeader><CardTitle>Financial Model Structure</CardTitle></CardHeader>
+          <CardContent>
+            <p>The financial model is built upon a detailed breakdown of our user base, segmented into three primary groups: Free Creators, Paid Creators, and Managers. Revenue is projected by analyzing subscription fees and transaction-based income from each segment. The model also accounts for the unique fee delegation system, where Managers can set their own rates for onboarded creators, and a platform fee is applied to Manager withdrawals. This comprehensive approach provides a clear and transparent view of our potential earnings.</p>
+            <h4 className="font-bold mt-6 mb-2">Fee Structure</h4>
+            <ul className="list-disc list-inside space-y-2">
+              <li><strong>Creator Subscription Fee:</strong> $29.99/month</li>
+              <li><strong>Manager Subscription Fee:</strong> $99/month</li>
+              <li><strong>Standard Transaction Fee:</strong> 2.9% + $0.30 per transaction</li>
+              <li><strong>Manager Withdrawal Fee:</strong> 5% (Managers only)</li>
+              <li><strong>Creator Withdrawal Fee:</strong> 0%</li>
+              <li><strong>Manager Fee Delegation:</strong> Managers can set a custom fee (1-5% typical) on their referred creators' sales, which is deducted from the creators' earnings and paid to the manager.</li>
+            </ul>
+            <h4 className="font-bold mt-6 mb-2">Revenue Breakdown (Year 3 with 7k users, 250 managers)</h4>
+            <ul className="list-disc list-inside space-y-2">
+              <li><strong>Paid Creators:</strong> 2,100 users * $29.99/month * 12 months + (2,100 users * $12,000 * 0.029) + (2,100 users * 2,200 * $0.30) = $2,872,548</li>
+              <li><strong>Free Creators:</strong> (4,900 users * $1,500 * 0.029) + (4,900 users * 628 * $0.30) = $1,136,310</li>
+              <li><strong>Managers:</strong> 250 managers * $99/month * 12 months + (50 stores * $25,000 * 0.029) + (50 stores * 7,335 * $0.30) = $443,275</li>
+              <li><strong>Manager Withdrawal Fee:</strong> $111,600 * 0.05 = $5,580</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </Section>
+
       <Section id="budget">
         <SectionTitle>Investment Requirement & Use of Funds</SectionTitle>
         <Card className="mb-8">
@@ -492,13 +698,14 @@ const InvestorPackage = () => {
           <CardContent style={{ height: '500px' }}>
             <ResponsivePie
               data={[
-                { id: 'Personnel & Operations', label: 'Personnel & Operations (17.55%)', value: 20000 },
-                { id: 'Technology Development', label: 'Technology Development (7.97%)', value: 9100 },
-                { id: 'API Integrations', label: 'API Integrations (2.46%)', value: 2800 },
-                { id: 'Launch & Marketing', label: 'Launch & Marketing (39.76%)', value: 45300 },
-                { id: 'Production Infrastructure', label: 'Production Infrastructure (8.86%)', value: 10100 },
-                { id: 'Innovation & Growth', label: 'Innovation & Growth (23.40%)', value: 26600 },
+                { id: 'Personnel & Operations', label: 'Personnel & Operations (17.55%)', value: 20000, color: '#3b3be3' },
+                { id: 'Technology Development', label: 'Technology Development (7.97%)', value: 9100, color: '#0ed60b' },
+                { id: 'API Integrations', label: 'API Integrations (2.46%)', value: 2800, color: '#9d00ff' },
+                { id: 'Launch & Marketing', label: 'Launch & Marketing (39.76%)', value: 45300, color: '#ff42f9' },
+                { id: 'Production Infrastructure', label: 'Production Infrastructure (8.86%)', value: 10100, color: '#131417' },
+                { id: 'Innovation & Growth', label: 'Innovation & Growth (23.40%)', value: 26600, color: '#00e1ed' },
               ]}
+              colors={{ datum: 'data.color' }}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
               innerRadius={0.5}
               padAngle={0.7}
@@ -511,7 +718,10 @@ const InvestorPackage = () => {
               arcLinkLabelsThickness={2}
               arcLinkLabelsColor={{ from: 'color' }}
               arcLabelsSkipAngle={10}
-              arcLabelsTextColor={{ from: 'color', modifiers: [['darker', 2]] }}
+              arcLabelsTextColor={(d) => {
+                const whiteTextIds = ['Production Infrastructure', 'Personnel & Operations', 'Launch & Marketing', 'API Integrations'];
+                return whiteTextIds.includes(d.id.toString()) ? 'white' : 'black';
+              }}
               legends={[
                 {
                   anchor: 'bottom',
@@ -548,9 +758,9 @@ const InvestorPackage = () => {
                 <CardHeader><CardTitle>Personnel & Operations (17.55% - $20,000)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
-                    <li>Founder Stipends: $12,000 (minimal personal expenses)</li>
-                    <li>Part-Time Support: $6,000 (marketing and customer service)</li>
-                    <li>General Admin: $2,000 (legal, accounting, business setup)</li>
+                    <li>Founder Stipends (minimal personal expenses)</li>
+                    <li>Part-Time Support (marketing and customer service)</li>
+                    <li>General Admin (legal, accounting, business setup)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Lean team structure with founder experience handling core development with AI coding agent acceleration, minimal overhead burn</p>
                 </CardContent>
@@ -559,11 +769,11 @@ const InvestorPackage = () => {
                 <CardHeader><CardTitle>Technology Development (7.97% - $9,100)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
-                    <li>UI/UX Design: $3,000 (professional design system)</li>
-                    <li>React Development: $1,500 (store builder interface)</li>
-                    <li>Mobile Development: $2,100 (iOS and Android apps)</li>
-                    <li>Development Tools: $600 (licenses and frameworks)</li>
-                    <li>Infrastructure Setup: $1,900 (Firebase, hosting, databases)</li>
+                    <li>UI/UX Design (professional design system)</li>
+                    <li>React Development (store builder interface)</li>
+                    <li>Mobile Development (iOS and Android apps)</li>
+                    <li>Development Tools (licenses and frameworks)</li>
+                    <li>Infrastructure Setup (Firebase, hosting, databases)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> 90% of development complete. Bonus lap features, debugging, optimization. </p>
                 </CardContent>
@@ -572,12 +782,12 @@ const InvestorPackage = () => {
                 <CardHeader><CardTitle>API Integrations (2.46% - $2,800)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
-                    <li>Print-on-Demand: $300 (Printful, Gooten integration)</li>
-                    <li>Dropshipping: $300 (AliExpress, Amazon APIs)</li>
-                    <li>AI Services: $300 (OpenAI, Gemini, Meshy)</li>
-                    <li>Payment Processing: $200 (Stripe Connect)</li>
-                    <li>Content Creation: $300 (Shotstack, Creatomate)</li>
-                    <li>Supporting Services: $1,400 (email, monitoring, analytics)</li>
+                    <li>Print-on-Demand (Printful, Gooten integration)</li>
+                    <li>Dropshipping (AliExpress, Amazon APIs)</li>
+                    <li>AI Services (OpenAI, Gemini, Meshy)</li>
+                    <li>Payment Processing (Stripe Connect)</li>
+                    <li>Content Creation (Shotstack, Creatomate)</li>
+                    <li>Supporting Services (email, monitoring, analytics)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Best-in-class integrations for comprehensive automation and a reliable user experience</p>
                 </CardContent>
@@ -586,9 +796,9 @@ const InvestorPackage = () => {
                 <CardHeader><CardTitle>Launch & Marketing (39.76% - $45,300)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
-                    <li>Creator Launch Program: $14,500 (resources & incentives for early users, driving traffic to their stores as well as FF)</li>
-                    <li>Digital Advertising: $28,000 (Meta, Google, TikTok, YouTube)</li>
-                    <li>Platform-Specific Marketing: $2,800 (LinkedIn, X (Twitter)</li>
+                    <li>Creator Launch Program (resources & incentives for early users, driving traffic to their stores as well as FF)</li>
+                    <li>Digital Advertising (Meta, Google, TikTok, YouTube)</li>
+                    <li>Platform-Specific Marketing (LinkedIn, X (Twitter)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Aggressive customer acquisition during critical launch window</p>
                 </CardContent>
@@ -597,9 +807,9 @@ const InvestorPackage = () => {
                 <CardHeader><CardTitle>Production Infrastructure (8.86% - $10,100)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
-                    <li>Hosting & Storage: $5,500 (production-grade infrastructure)</li>
-                    <li>Database Systems: $2,500 (scalable data management)</li>
-                    <li>API Costs: $2,100 (production-level integrations)</li>
+                    <li>Hosting & Storage (production-grade infrastructure)</li>
+                    <li>Database Systems (scalable data management)</li>
+                    <li>API Costs (production-level integrations)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Reliable & Scalable infrastructure ready for rapid user growth</p>
                 </CardContent>
@@ -608,11 +818,11 @@ const InvestorPackage = () => {
                 <CardHeader><CardTitle>Innovation & Growth (23.40% - $26,600)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
-                    <li>Ongoing Development: $9,200 (templates, features, optimization)</li>
-                    <li>Quality Assurance: $2,300 (testing tools and services)</li>
-                    <li>Continuous Marketing: $10,500 (ongoing ad spend)</li>
-                    <li>Content Creation: $4,200 (generative AI, educational and marketing content)</li>
-                    <li>Security & Compliance: $400 (professional audits)</li>
+                    <li>Ongoing Development (templates, features, optimization)</li>
+                    <li>Quality Assurance (testing tools and services)</li>
+                    <li>Continuous Marketing (ongoing ad spend)</li>
+                    <li>Content Creation (generative AI, educational and marketing content)</li>
+                    <li>Security & Compliance (professional audits)</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Continuous improvement and market expansion</p>
                 </CardContent>
@@ -644,6 +854,9 @@ const InvestorPackage = () => {
               <p><strong>Risk:</strong> Shopify, Adobe, or others launch competing AI features</p>
               <p><strong>Mitigation:</strong> First-mover advantage, superior AI integration [we are the ChatGPT to Siri and the Anthropic to OpenAI]]</p>
               <p><strong>Competitive Moat:</strong> 18-month technology lead expected (unique modular scaffold systems in place and are constantly optimized, interchangeable with new AI models as they improve at an exponential rate)</p>
+              <h4 className="font-bold mt-4">Ethical AI Considerations</h4>
+              <p><strong>Risk:</strong> Algorithmic bias, data privacy concerns, and lack of transparency in AI-driven marketing.</p>
+              <p><strong>Mitigation:</strong> Continuously audit of our algorithms for bias, provide users with clear data usage policies, and ensure compliance with all relevant privacy regulations.</p>
               <h4 className="font-bold mt-4">Creator Market Saturation</h4>
               <p><strong>Risk:</strong> Limited pool of potential creators ready for stores</p>
               <p><strong>Mitigation:</strong> Influencer Marketing, Low barrier to entry, Quality over quantity (targeting both creators with businesses and artists not yet monetized)</p>
