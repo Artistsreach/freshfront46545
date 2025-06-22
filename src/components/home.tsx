@@ -13,6 +13,7 @@ import StoreCreation from "./StoreCreation";
 import SeeItInAction from "./SeeItInAction";
 import RolesAndBenefits from "./RolesAndBenefits";
 import EcosystemChart from "./EcosystemChart";
+import AIContentCreationModal from "./AIContentCreationModal";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -28,6 +29,7 @@ import { Edit, Image, Layers, ArrowRight, TrendingUp, X } from "lucide-react";
 const HomePage = () => {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<{ title: string; description: string } | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
@@ -52,7 +54,7 @@ const HomePage = () => {
       />
 
       {/* Next-Generation Product Visualization Section */}
-      <section className="py-20 px-4 md:px-8 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 dark:from-gray-900 dark:via-purple-900/20 dark:to-pink-900/20 relative overflow-hidden">
+      <section id="product-visualization" className="py-20 px-4 md:px-8 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 dark:from-gray-900 dark:via-purple-900/20 dark:to-pink-900/20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 blur-3xl animate-pulse" />
           <div
@@ -308,9 +310,9 @@ const HomePage = () => {
                 ],
               },
               {
-                title: "Product Visualization",
+                title: "Product Visualizer",
                 description:
-                  "Showcase products with immersive 3D views and AR features",
+                  "Upload a reference image and see how products look in that space using AI",
                 mediaUrl:
                   "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//visualize%202.mp4",
                 mediaType: "video",
@@ -382,8 +384,15 @@ const HomePage = () => {
                     <Button
                       variant="outline"
                       className="w-full group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-sky-500 group-hover:text-white group-hover:border-transparent transition-all duration-300 border-blue-200 dark:border-sky-600"
+                      onClick={() => {
+                        if (tool.title === "AI Content Creation") {
+                          setIsModalOpen(true);
+                        } else if (tool.title === "Product Visualization") {
+                          document.getElementById("product-visualization")?.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
                     >
-                      Try {tool.title}
+                      {tool.title === "AI Content Creation" ? "How It Works" : `Try ${tool.title}`}
                     </Button>
                   </CardFooter>
                 </Card>
@@ -987,6 +996,8 @@ const HomePage = () => {
           </CardContent>
         </Card>
       )}
+
+      {isModalOpen && <AIContentCreationModal onClose={() => setIsModalOpen(false)} />}
 
       {/* Footer */}
       <footer className="bg-slate-900 dark:bg-gray-950 text-slate-300 dark:text-gray-400 py-12 px-4 md:px-8 lg:px-16">

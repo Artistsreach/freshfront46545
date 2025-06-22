@@ -198,19 +198,6 @@ const InvestorPackage = () => {
             </Card>
           </div>
         </div>
-        <Card className="mt-12">
-          <CardHeader><CardTitle>Key Investment Highlights</CardTitle></CardHeader>
-          <CardContent>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Market Leadership Position:</strong> First-mover advantage in AI Ecommerce</li>
-              <li><strong>Scalable Revenue Model:</strong> Multiple revenue streams with 85%+ gross margins</li>
-              <li><strong>Lean Capital Requirements:</strong> $113,900 marketing focused budget (founder is lead developer)
-              </li>
-              <li><strong>Market Ready:</strong> Finished product ready to go to market after rigorous production tests</li>
-              <li><strong>Clear Path to Profitability:</strong> Revenue generation starts immediately upon launch</li>
-            </ul>
-          </CardContent>
-        </Card>
       </Section>
 
       <Section id="market">
@@ -239,122 +226,10 @@ const InvestorPackage = () => {
             </CardContent>
           </Card>
           <Card>
-            <CardHeader><CardTitle>Year 3 Snapshot Projection</CardTitle></CardHeader>
+            <CardHeader><CardTitle>Revenue Model</CardTitle></CardHeader>
             <CardContent>
-              <ul className="list-disc list-inside space-y-2">
-                <li><strong>Target User Base:</strong> 7,250 users (7,000 creators, 250 managers).</li>
-                <li><strong>Projected Platform GMV:</strong> $32.8M annually.</li>
-                <li><strong>Projected Net Revenue:</strong> $4.34M annually.</li>
-              </ul>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button variant="outline" className="mt-4">View Model</Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-4xl h-5/6 overflow-y-auto">
-                  <DialogHeader>
-                    <DialogTitle>Platform Financial Model</DialogTitle>
-                  </DialogHeader>
-                  <div className="space-y-6">
-                    <p className="mb-4">This document outlines the projected annual revenue for the platform based on a three-tiered user structure: Free Creators, Paid Creators, and Managers. The model accounts for subscription fees, transaction fees, and a revised fee delegation system where managers set their own rates.</p>
-            
-                    <h4 className="font-bold mt-6 mb-2">Section 1: User Base Overview</h4>
-                    <p>The total user base is composed of 7,250 individuals, broken down as follows:</p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                      <li>Total Creators: 7,000</li>
-                      <li>Organic Creators: 5,000</li>
-                      <li>Manager-Onboarded Creators: 2,000</li>
-                      <li>Total Managers: 250</li>
-                    </ul>
-                    <p>The creator base is segmented into Free and Paid plans, maintaining a 70/30 split:</p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                      <li>Free Plan Creators: 70% of 7,000 = 4,900 users</li>
-                      <li>Paid Plan Creators: 30% of 7,000 = 2,100 users</li>
-                    </ul>
-
-                    <h4 className="font-bold mt-6 mb-2">Section 2: Creator Revenue Breakdown</h4>
-                    <p>This section details the revenue generated directly from the 7,000 creators.</p>
-                    <h5 className="font-semibold mt-4 mb-2">A. Paid Plan Creators (2,100 Users)</h5>
-                    <p><strong>Assumptions:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                      <li>Subscription Fee: $29.99/month</li>
-                      <li>Average Annual Earnings per User: $12,000</li>
-                      <li>Average Annual Transactions per User: 2,200</li>
-                    </ul>
-                    <p><strong>Subscription Revenue:</strong> 2,100 users × $29.99/month × 12 months = $755,748</p>
-                    <p><strong>Transaction Fee Revenue:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                      <li>Total Gross Earnings: 2,100 users × $12,000 = $25,200,000</li>
-                      <li>Percentage Fee (2.9%): $25,200,000 × 0.029 = $730,800</li>
-                      <li>Fixed Fee ($0.30): (2,100 users × 2,200 transactions) × $0.30 = $1,386,000</li>
-                    </ul>
-                    <p><strong>Total Annual Revenue from Paid Plan:</strong> $755,748 + $730,800 + $1,386,000 = $2,872,548</p>
-
-                    <h5 className="font-semibold mt-4 mb-2">B. Free Plan Creators (4,900 Users)</h5>
-                    <p><strong>Assumptions:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Average Annual Earnings per User: $1,500</li>
-                        <li>Average Annual Transactions per User: 628</li>
-                    </ul>
-                    <p><strong>Transaction Fee Revenue:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Total Gross Earnings: 4,900 users × $1,500 = $7,350,000</li>
-                        <li>Percentage Fee (2.9%): $7,350,000 × 0.029 = $213,150</li>
-                        <li>Fixed Fee ($0.30): (4,900 users × 628 transactions) × $0.30 = $923,160</li>
-                    </ul>
-                    <p><strong>Total Annual Revenue from Free Plan:</strong> $213,150 + $923,160 = $1,136,310</p>
-
-                    <h4 className="font-bold mt-6 mb-2">Section 3: Manager Impact & Fee Delegation</h4>
-                    <p>This section analyzes the revenue and costs associated with the 250 managers.</p>
-                    <h5 className="font-semibold mt-4 mb-2">A. Direct Revenue from Managers</h5>
-                    <p><strong>Assumptions:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Subscription Fee: $99/month</li>
-                        <li>50 managers (20%) run a personal store, each earning $25,000 annually.</li>
-                    </ul>
-                    <p><strong>Manager Subscription Revenue:</strong> 250 managers × $99/month × 12 months = $297,000</p>
-                    <p><strong>Transaction Fees from Managers' Personal Stores:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Total Gross Earnings: 50 stores × $25,000 = $1,250,000</li>
-                        <li>Percentage Fee (2.9%): $1,250,000 × 0.029 = $36,250</li>
-                        <li>Fixed Fee ($0.30): (50 stores × 7,335 transactions) × $0.30 = $110,025</li>
-                    </ul>
-                    <p><strong>Total Direct Annual Revenue from Managers:</strong> $297,000 + $36,250 + $110,025 = $443,275</p>
-
-                    <h5 className="font-semibold mt-4 mb-2">B. Fees Delegated to Managers (Cost of Revenue)</h5>
-                    <p><strong>Assumptions:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Managers can set their own fee. For this model, we assume an average delegated fee of 1.2%.</li>
-                        <li>Managers onboarded 2,000 creators (600 Paid, 1,400 Free).</li>
-                    </ul>
-                    <p><strong>Gross Sales from Onboarded Users:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>From Paid Users: 600 users × $12,000 = $7,200,000</li>
-                        <li>From Free Users: 1,400 users × $1,500 = $2,100,000</li>
-                        <li>Total Managed Sales = $9,300,000</li>
-                    </ul>
-                    <p><strong>Total Fees Delegated to Managers:</strong> $9,300,000 × 1.2% (average fee) = -$111,600</p>
-
-                    <h5 className="font-semibold mt-4 mb-2">C. Revenue from Manager Withdrawal Fee</h5>
-                    <p><strong>Assumptions:</strong></p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Platform takes a 2.9% fee when managers withdraw their total balance.</li>
-                    </ul>
-                    <p><strong>Revenue from Withdrawal Fee:</strong> $111,600 (Total Delegated Fees) × 2.9% = $3,236</p>
-
-                    <h4 className="font-bold mt-6 mb-2">Section 4: Final Annual Financial Summary</h4>
-                    <p>This summary consolidates all revenue streams and costs to determine the platform's net annual earnings.</p>
-                    <ul className="list-disc list-inside ml-4 mb-4">
-                        <li>Total Revenue from Paid Creators: $2,872,548</li>
-                        <li>Total Revenue from Free Creators: $1,136,310</li>
-                        <li>Total Direct Revenue from Managers: $443,275</li>
-                        <li>Revenue from Manager Withdrawal Fee: $3,236</li>
-                    </ul>
-                    <p><strong>Gross Annual Revenue:</strong> $2,872,548 + $1,136,310 + $443,275 + $3,236 = $4,455,369</p>
-                    <p><strong>Subtract: Fees Delegated to Managers (Cost):</strong> -$111,600</p>
-                    <p><strong>Projected Net Annual Earnings: $4,455,369 - $111,600 = $4,343,769</strong></p>
-                  </div>
-                </DialogContent>
-              </Dialog>
+              <p>Our revenue model is designed for scalability and diversification, ensuring multiple income streams that grow with our user base. We focus on a combination of transaction-based fees and recurring subscriptions, creating a stable and predictable financial future.</p>
+              <Button variant="outline" className="mt-4" onClick={() => scrollToSection('financial-projections')}>View Model</Button>
             </CardContent>
           </Card>
           <Card>
@@ -696,11 +571,11 @@ const InvestorPackage = () => {
           <CardContent style={{ height: '500px' }}>
             <ResponsiveBar
               data={[
-                { stream: 'Paid Creators', revenue: 2872548 },
-                { stream: 'Free Creators', revenue: 1136310 },
-                { stream: 'Managers', revenue: 443275 },
-                { stream: 'Withdrawal Fees', revenue: 3236 },
-                { stream: 'Delegated Fees', revenue: -111600 },
+                { stream: 'Paid Creators', revenue: 64.5 },
+                { stream: 'Free Creators', revenue: 25.5 },
+                { stream: 'Managers', revenue: 10 },
+                { stream: 'Withdrawal Fees', revenue: 0.1 },
+                { stream: 'Delegated Fees', revenue: -2.5 },
               ]}
               keys={['revenue']}
               indexBy="stream"
@@ -724,9 +599,10 @@ const InvestorPackage = () => {
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
-                legend: 'Revenue (USD)',
+                legend: 'Revenue (%)',
                 legendPosition: 'middle',
                 legendOffset: -40,
+                format: value => `${value}%`,
               }}
               labelSkipWidth={12}
               labelSkipHeight={12}
@@ -756,6 +632,11 @@ const InvestorPackage = () => {
                 },
               ]}
               animate={true}
+              tooltip={({ id, value, color }) => (
+                <strong style={{ color }}>
+                  {id}: {value}%
+                </strong>
+              )}
             />
           </CardContent>
         </Card>
@@ -774,9 +655,9 @@ const InvestorPackage = () => {
             </ul>
             <h4 className="font-bold mt-6 mb-2">Revenue Breakdown (Year 3 with 7k users, 250 managers)</h4>
             <ul className="list-disc list-inside space-y-2">
-              <li><strong>Paid Creators:</strong> 2,100 users * $29.99/month * 12 months + (2,100 users * $12,000 * 0.029) + (2,100 users * 2,200 * $0.30) = $2,872,548</li>
-              <li><strong>Free Creators:</strong> (4,900 users * $1,500 * 0.029) + (4,900 users * 628 * $0.30) = $1,136,310</li>
-              <li><strong>Managers:</strong> 250 managers * $99/month * 12 months + (50 stores * $25,000 * 0.029) + (50 stores * 7,335 * $0.30) = $443,275</li>
+              <li><strong>Paid Creators:</strong> 2,100 users * $29.99/month * 12 months + (2,100 users * avg $12,000 revenue * 0.029) + (2,100 users * average 2,200 transactions * $0.30) = $2,872,548</li>
+              <li><strong>Free Creators:</strong> (4,900 users * avg $1,500 revenue * 0.029) + (4,900 users * average 628 transactions * $0.30) = $1,136,310</li>
+              <li><strong>Managers:</strong> 250 managers * $99/month * 12 months + (50 stores * avg $25,000 revenue * 0.029) + (50 stores * average 7,335 transactions * $0.30) = $443,275</li>
               <li><strong>Manager Withdrawal Fee:</strong> $111,600 * 0.029 = $3,236</li>
             </ul>
           </CardContent>
@@ -786,16 +667,16 @@ const InvestorPackage = () => {
       <Section id="budget">
         <SectionTitle>Investment Requirement & Use of Funds</SectionTitle>
         <Card className="mb-8">
-          <CardHeader><CardTitle>Total Investment Request: $113,900</CardTitle></CardHeader>
+          <CardHeader><CardTitle>Use of Funds</CardTitle></CardHeader>
           <CardContent style={{ height: '500px' }}>
             <ResponsivePie
               data={[
-                { id: 'Personnel & Operations', label: 'Personnel & Operations (17.55%)', value: 20000, color: '#3b3be3' },
-                { id: 'Technology Development', label: 'Technology Development (7.97%)', value: 9100, color: '#0ed60b' },
-                { id: 'API Integrations', label: 'API Integrations (2.46%)', value: 2800, color: '#9d00ff' },
-                { id: 'Launch & Marketing', label: 'Launch & Marketing (39.76%)', value: 45300, color: '#ff42f9' },
-                { id: 'Production Infrastructure', label: 'Production Infrastructure (8.86%)', value: 10100, color: '#131417' },
-                { id: 'Innovation & Growth', label: 'Innovation & Growth (23.40%)', value: 26600, color: '#00e1ed' },
+                { id: 'Personnel & Operations', label: 'Personnel & Operations (20%)', value: 20, color: '#3b3be3' },
+                { id: 'Technology Development', label: 'Technology Development (20%)', value: 20, color: '#0ed60b' },
+                { id: 'API Integrations', label: 'API Integrations (5%)', value: 5, color: '#9d00ff' },
+                { id: 'Launch & Marketing', label: 'Launch & Marketing (30%)', value: 30, color: '#ff42f9' },
+                { id: 'Production Infrastructure', label: 'Production Infrastructure (10%)', value: 10, color: '#131417' },
+                { id: 'Innovation & Growth', label: 'Innovation & Growth (15%)', value: 15, color: '#00e1ed' },
               ]}
               colors={{ datum: 'data.color' }}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
@@ -847,7 +728,7 @@ const InvestorPackage = () => {
           <CardContent>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card>
-                <CardHeader><CardTitle>Personnel & Operations (17.55% - $20,000)</CardTitle></CardHeader>
+                <CardHeader><CardTitle>Personnel & Operations (20%)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>Founder Stipends (minimal personal expenses)</li>
@@ -858,7 +739,7 @@ const InvestorPackage = () => {
                 </CardContent>
               </Card>
               <Card>
-                <CardHeader><CardTitle>Technology Development (7.97% - $9,100)</CardTitle></CardHeader>
+                <CardHeader><CardTitle>Technology Development (20%)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>UI/UX Design (professional design system)</li>
@@ -871,7 +752,7 @@ const InvestorPackage = () => {
                 </CardContent>
               </Card>
               <Card>
-                <CardHeader><CardTitle>API Integrations (2.46% - $2,800)</CardTitle></CardHeader>
+                <CardHeader><CardTitle>API Integrations (5%)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>Print-on-Demand (Printful, Gooten integration)</li>
@@ -885,7 +766,7 @@ const InvestorPackage = () => {
                 </CardContent>
               </Card>
               <Card>
-                <CardHeader><CardTitle>Launch & Marketing (39.76% - $45,300)</CardTitle></CardHeader>
+                <CardHeader><CardTitle>Launch & Marketing (30%)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>Creator Launch Program (resources & incentives for early users, driving traffic to their stores as well as FF)</li>
@@ -896,7 +777,7 @@ const InvestorPackage = () => {
                 </CardContent>
               </Card>
               <Card>
-                <CardHeader><CardTitle>Production Infrastructure (8.86% - $10,100)</CardTitle></CardHeader>
+                <CardHeader><CardTitle>Production Infrastructure (10%)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>Hosting & Storage (production-grade infrastructure)</li>
@@ -907,7 +788,7 @@ const InvestorPackage = () => {
                 </CardContent>
               </Card>
               <Card>
-                <CardHeader><CardTitle>Innovation & Growth (23.40% - $26,600)</CardTitle></CardHeader>
+                <CardHeader><CardTitle>Innovation & Growth (15%)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
                     <li>Ongoing Development (templates, features, optimization)</li>
