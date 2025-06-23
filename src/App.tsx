@@ -6,6 +6,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import Documentation from "./components/Documentation";
 import Blog from "./components/Blog";
 import InvestorPackage from "./components/InvestorPackage";
+import Playbook from "./components/Playbook";
 import routes from "tempo-routes";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/documentation" element={<Documentation />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/investorpackage" element={<InvestorPackage />} />
+          <Route path="/playbook" element={<Playbook />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>

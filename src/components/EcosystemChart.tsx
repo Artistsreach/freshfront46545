@@ -71,6 +71,7 @@ const nodeDetails: { [key: string]: { title: string; description: string } } = {
   CUAI1: { title: 'Variant & Product Visualizer', description: 'Customers can see products in different variations and contexts.' },
   CUAI2: { title: 'Realtime Support Assistant', description: 'An AI-powered chatbot to assist customers with their queries in real-time.' },
   CUAI3: { title: 'Personalization', description: 'The shopping experience is personalized based on customer behavior and preferences.' },
+  MR1: { title: 'Market Research with Google Search and Web Scraping', description: 'Leverage AI to perform market research using Google Search and web scraping to identify trends, competition, and target audience.' },
 };
 
 const EcosystemChart: React.FC<{ setSelectedNode: (node: { title: string; description: string } | null) => void }> = ({ setSelectedNode }) => {
@@ -103,7 +104,8 @@ const EcosystemChart: React.FC<{ setSelectedNode: (node: { title: string; descri
 
         subgraph "User Prompt Mode"
             UP --> UP1[Enter Store Name & Description]
-            UP1 --> UP2{Store Type Check}
+            UP1 --> MR1[Market Research]
+            MR1 --> UP2{Store Type Check}
             UP2 -->|Inventory| UP3[Upload Product Photos]
             UP2 -->|Print on Demand| UP4[Enter Design Prompt]
             UP2 -->|Dropshipping| UP5[Search Products]
@@ -123,7 +125,8 @@ const EcosystemChart: React.FC<{ setSelectedNode: (node: { title: string; descri
             SBS --> SBS1[Step 1: Niche]
             SBS1 --> SBS2[Step 2: Store Name]
             SBS2 --> SBS3[Step 3: Logo]
-            SBS3 --> SBS4{Step 4: Store Type}
+            SBS3 --> MR1
+            MR1 --> SBS4{Step 4: Store Type}
             SBS4 -->|Inventory| SBS4_1[Upload Photos]
             SBS4 -->|Print on Demand| SBS4_2[Generate Designs]
             SBS4 -->|Dropshipping| SBS4_3[Search Products]
@@ -199,7 +202,7 @@ const EcosystemChart: React.FC<{ setSelectedNode: (node: { title: string; descri
         class A,C,E,F,G,CD,CAI1,CAI2,CAI3,CAI4,REV3 creator;
         class M1,M2,M3,M4,M5,MGR_H,MD,MAI1,MAI2,REV2 manager;
         class CUST1,CUST2,PURCHASE,CUAI1,CUAI2,CUAI3 customer;
-        class UP6,UP8,UP11,STORE_GEN,SG1,SG2,SG3,CREATOR_AI,MANAGER_AI,CUSTOMER_AI ai;
+        class UP6,UP8,UP11,STORE_GEN,SG1,SG2,SG3,CREATOR_AI,MANAGER_AI,CUSTOMER_AI,MR1 ai;
         class B,D,MODE,UP,UP1,UP2,UP3,UP4,UP5,UP7,UP9,UP10,UP12,SBS,SBS1,SBS2,SBS3,SBS4,SBS4_1,SBS4_2,SBS4_3,SBS5,SBS6,SBS7,IMP,IMP1,IMP2,IMP3,IMP4,LIVE,PAY1,ORDER1,FULFILL,RESOLVE,FF_H,REV1,DASH platform;
 
         click A call handleNodeClick("A")
@@ -213,6 +216,7 @@ const EcosystemChart: React.FC<{ setSelectedNode: (node: { title: string; descri
         click M3 call handleNodeClick("M3")
         click M4 call handleNodeClick("M4")
         click M5 call handleNodeClick("M5")
+        click MR1 call handleNodeClick("MR1")
         click UP call handleNodeClick("UP")
         click SBS call handleNodeClick("SBS")
         click IMP call handleNodeClick("IMP")

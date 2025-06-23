@@ -1050,6 +1050,14 @@ const HomePage = () => {
                     Blog
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="/playbook"
+                    className="hover:text-white transition-colors cursor-pointer"
+                  >
+                    Playbook
+                  </a>
+                </li>
               </ul>
             </div>
             <div>

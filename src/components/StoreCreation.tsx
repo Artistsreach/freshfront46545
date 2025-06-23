@@ -37,6 +37,11 @@ const StoreCreation = ({ id, activeVideo, setActiveVideo }: StoreCreationProps) 
       description: "Bring your existing store from other platforms.",
       icon: <UploadCloud className="h-8 w-8 text-green-600" />,
     },
+    {
+      title: "Market Research",
+      description: "Leverage AI to perform market research using Google Search and web scraping to identify trends, competition, and target audience.",
+      icon: <Bot className="h-8 w-8 text-purple-600" />,
+    },
   ];
 
   const storeTypes = [
