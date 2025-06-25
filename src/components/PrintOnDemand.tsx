@@ -23,43 +23,39 @@ interface PrintOnDemandProduct {
 const PRINT_ON_DEMAND_PRODUCTS: PrintOnDemandProduct[] = [
   {
     name: "Black Hoodie",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Hoodie.jpeg",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Hoodie.jpeg",
   },
   {
     name: "White Baseball Cap",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Hat.jpeg",
-  },
-  {
-    name: "Mug",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Mug.png",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Hat.jpeg",
   },
   {
     name: "Pillow",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Pillow.webp",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Pillow.webp",
   },
   {
     name: "White T-Shirt",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Shirt.webp",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Shirt.webp",
   },
   {
     name: "Notebook",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Notebook.jpeg",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Notebook.jpeg",
   },
   {
     name: "Travel Mug",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Mug.png",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//TravelMug.jpeg",
   },
   {
     name: "Tote Bag",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Totebag.jpeg",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Totebag.jpeg",
+  },
+  {
+    name: "Blanket",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Blanket.webp",
+  },
+  {
+    name: "Canvas",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Canvas.jpeg",
   },
 ];
 

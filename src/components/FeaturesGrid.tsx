@@ -152,7 +152,7 @@ const FeaturesGrid = () => {
       description:
         "Timeless design with clean layouts and intuitive navigation",
       imageUrl:
-        "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Template5.webp",
+        "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_5946.webp?alt=media&token=28ef4150-ce9c-4587-b2c0-808f677f935a",
       features: ["Minimalist design", "Fast loading", "Mobile optimized"],
       gradient: "from-blue-500 to-cyan-500",
     },
@@ -161,7 +161,7 @@ const FeaturesGrid = () => {
       description:
         "Contemporary aesthetics with bold elements and dynamic interactions",
       imageUrl:
-        "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Template4.jpeg",
+        "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_5952.webp?alt=media&token=f9d6552e-3b8a-44d3-bed8-9cacca4d0705",
       features: [
         "Animated transitions",
         "Immersive galleries",
@@ -174,7 +174,7 @@ const FeaturesGrid = () => {
       description:
         "Luxury-focused template with sophisticated styling and premium features",
       imageUrl:
-        "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Template2.webp",
+        "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_5951.jpeg?alt=media&token=d41eeb3d-d05e-46b9-9414-549a998f5d7f",
       features: [
         "High-end aesthetics",
         "VIP customer features",
@@ -187,7 +187,7 @@ const FeaturesGrid = () => {
       description:
         "Bold and striking design with high contrast and strong visual hierarchy",
       imageUrl:
-        "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Template3.jpeg",
+        "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_5950.jpeg?alt=media&token=db2ca308-084e-49f6-a702-ea0c848b2f36",
       features: [
         "High contrast UI",
         "Bold typography",
@@ -200,7 +200,7 @@ const FeaturesGrid = () => {
       description:
         "Smooth, minimal interface with subtle animations and elegant typography",
       imageUrl:
-        "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Template1.webp",
+        "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_5954.webp?alt=media&token=122da0d0-a833-45cf-9b7d-2fc53bacfe89",
       features: [
         "Subtle animations",
         "Elegant typography",

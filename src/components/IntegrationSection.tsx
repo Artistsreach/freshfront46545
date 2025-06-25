@@ -80,7 +80,7 @@ const IntegrationSection = () => {
                 className="flex items-center justify-center gap-2"
               >
                 <img
-                  src="https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Shopifylogo.PNG"
+                  src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Shopifylogo.PNG?alt=media&token=b7b1e86f-a97b-479a-bcb8-0ec589a4b608"
                   alt="Shopify Logo"
                   className="h-6 w-auto"
                 />
@@ -91,7 +91,7 @@ const IntegrationSection = () => {
                 className="flex items-center justify-center gap-2"
               >
                 <img
-                  src="https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Bigcommerce.WEBP"
+                  src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_5907.webp?alt=media&token=6284ae27-76cd-4dae-b1d2-f1f9b664b229"
                   alt="BigCommerce Logo"
                   className="h-6 w-auto"
                 />

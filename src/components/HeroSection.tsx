@@ -27,59 +27,40 @@ interface SampleProduct {
 
 const SAMPLE_PRODUCTS: SampleProduct[] = [
   {
+    name: "Green Jacket",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Jacket.webp",
+  },
+  {
+    name: "Orange Couch",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Orange%20couch.jpeg",
+  },
+  {
+    name: "Red Shoe",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Rednike.jpeg",
+  },
+  {
+    name: "Vase",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Vase.webp",
+  },
+  {
+    name: "Wood Desk",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Woodendesk.jpeg",
+  },
+  {
+    name: "Glasses",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Glasses.jpeg",
+  },
+  {
     name: "Tiffany Necklace",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Tiffany.jpeg",
+    image: "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Tiffany.jpeg?alt=media&token=8aa441ec-7bd5-4da3-afba-fcdd40680469",
   },
   {
     name: "Gucci Bag",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Guccibag.jpeg",
-  },
-  {
-    name: "Modern Table",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Table.jpeg",
-  },
-  {
-    name: "Kitchen Counter",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Kitchen.webp",
+    image: "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Guccibag.jpeg?alt=media&token=94acece7-053f-4b45-99ce-f08aed8a217d",
   },
   {
     name: "Fireplace Mantle",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Fireplace.jpeg",
-  },
-  {
-    name: "Lava Lamp",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Lava.webp",
-  },
-  {
-    name: "Green Vase",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Vase.webp",
-  },
-  {
-    name: "Adidas Shoes",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Adidas.webp",
-  },
-  {
-    name: "Orange Chair",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Orangechair.jpeg",
-  },
-  {
-    name: "Sunglasses",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Glasses.jpeg",
-  },
-  {
-    name: "Green Jacket",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Greenjacket.webp",
+    image: "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Fireplace.jpeg?alt=media&token=b70ec4bf-e54f-47cc-ba7c-9eeb03eb9567",
   },
 ];
 

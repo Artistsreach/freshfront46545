@@ -372,11 +372,10 @@ const IncreasedSalesPerformance = () => {
           className="text-center mt-16"
         >
           <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 dark:text-white">
-            Ready to Transform Your E-commerce Success?
+            Ready to Start Your E-commerce Business?
           </h3>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of entrepreneurs who are already scaling their
-            businesses with AI-powered store creation and management.
+            Sign up and create your first store today for free.
           </p>
           <div className="flex justify-center">
             <Button

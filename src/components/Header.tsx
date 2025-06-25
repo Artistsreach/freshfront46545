@@ -67,8 +67,8 @@ const Header = () => {
               <img
                 src={
                   isDark
-                    ? "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//ffwhite.png"
-                    : "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Ffblack.png"
+                    ? "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/ffwhite.png?alt=media&token=45fa69e8-8d64-496b-aee3-d406b596ef5f"
+                    : "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Untitled%20design.png?alt=media&token=715b4d03-a8c2-446a-8137-974c779f9aa0"
                 }
                 alt="FreshFront Logo"
                 className="h-8 w-auto transition-all duration-300"

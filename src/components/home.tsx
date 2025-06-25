@@ -290,7 +290,7 @@ const HomePage = () => {
                 description:
                   "Edit any text with a simple click - no complex interfaces needed",
                 mediaUrl:
-                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Inlinetextedit.gif",
+                  "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Inlinetextedit.gif?alt=media&token=c66aa7b0-98b1-433d-83e1-ef56d1bedb77",
                 mediaType: "gif",
                 icon: <Edit className="h-6 w-6 text-blue-600" />,
                 features: ["Click to edit", "Real-time preview", "Auto-save"],
@@ -300,8 +300,8 @@ const HomePage = () => {
                 description:
                   "Generate professional content with AI-powered tools",
                 mediaUrl:
-                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//ContentCreation.mp4",
-                mediaType: "video",
+                  "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/CopyofUntitled-ezgif.com-video-to-gif-converter.gif?alt=media&token=ae01dcec-efe2-4427-8109-cf57333fe137",
+                mediaType: "gif",
                 icon: <Image className="h-6 w-6 text-purple-600" />,
                 features: [
                   "AI-generated images",
@@ -314,7 +314,7 @@ const HomePage = () => {
                 description:
                   "Upload a reference image and see how products look in that space using AI",
                 mediaUrl:
-                  "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//visualize%202.mp4",
+                  "https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Combine%20Products%20Together.mp4?alt=media&token=07d59464-f744-40f8-a732-bd6525653f15",
                 mediaType: "video",
                 icon: <Layers className="h-6 w-6 text-green-600" />,
                 features: [
@@ -857,7 +857,7 @@ const HomePage = () => {
             <div className="text-center mb-12">
               <div className="flex justify-center mb-6">
                 <img
-                  src="https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Stripelogo.PNG"
+                  src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/Stripelogo.PNG?alt=media&token=7b989f42-b2c9-4a3c-a7e1-9ed280b6a9ea"
                   alt="Stripe Logo"
                   className="h-12 w-auto"
                 />
@@ -1006,7 +1006,7 @@ const HomePage = () => {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  src="https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//ffwhite.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/ffwhite.png?alt=media&token=45fa69e8-8d64-496b-aee3-d406b596ef5f"
                   alt="FreshFront Logo"
                   className="h-8 w-auto"
                 />

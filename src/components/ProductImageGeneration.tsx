@@ -21,59 +21,68 @@ interface SampleProduct {
 
 const SAMPLE_PRODUCTS: SampleProduct[] = [
   {
-    name: "Tiffany Necklace",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Tiffany.jpeg",
+    name: "Adidas Shoes (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Adidas.webp",
   },
   {
-    name: "Gucci Bag",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Guccibag.jpeg",
-  },
-  {
-    name: "Modern Table",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Table.jpeg",
-  },
-  {
-    name: "Kitchen Counter",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Kitchen.webp",
-  },
-  {
-    name: "Fireplace Mantle",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Fireplace.jpeg",
-  },
-  {
-    name: "Lava Lamp",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Lava.webp",
-  },
-  {
-    name: "Green Vase",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Vase.webp",
-  },
-  {
-    name: "Adidas Shoes",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Adidas.webp",
-  },
-  {
-    name: "Orange Chair",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Orangechair.jpeg",
-  },
-  {
-    name: "Sunglasses",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Glasses.jpeg",
+    name: "Blanket (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Blanket.webp",
   },
   {
     name: "Green Jacket",
-    image:
-      "https://uwbrgokfgelgxeonoqah.supabase.co/storage/v1/object/public/images//Greenjacket.webp",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Jacket.webp",
+  },
+  {
+    name: "Canvas (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Canvas.jpeg",
+  },
+  {
+    name: "Hat (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Hat.jpeg",
+  },
+  {
+    name: "Hoodie (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Hoodie.jpeg",
+  },
+  {
+    name: "Notebook (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Notebook.jpeg",
+  },
+  {
+    name: "Orange Couch",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Orange%20couch.jpeg",
+  },
+  {
+    name: "Pillow (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Pillow.webp",
+  },
+  {
+    name: "Red Shoe",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Rednike.jpeg",
+  },
+  {
+    name: "Shirt (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Shirt.webp",
+  },
+  {
+    name: "Tote Bag (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Totebag.jpeg",
+  },
+  {
+    name: "Travel Mug (pod)",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//TravelMug.jpeg",
+  },
+  {
+    name: "Vase",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Vase.webp",
+  },
+  {
+    name: "Wood Desk",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Woodendesk.jpeg",
+  },
+  {
+    name: "Glasses",
+    image: "https://kmgahoiiiihmfjnsblij.supabase.co/storage/v1/object/public/music//Glasses.jpeg",
   },
 ];
 
