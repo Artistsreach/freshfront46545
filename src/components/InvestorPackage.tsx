@@ -187,13 +187,7 @@ const InvestorPackage = () => {
             <Card>
               <CardHeader><CardTitle>The Opportunity</CardTitle></CardHeader>
               <CardContent>
-                <p>The global print-on-demand market is projected to reach $42.64 billion by 2030, growing at 33.1% CAGR, while AI is projected to grow at a CAGR of 35.9% to 1.81T. Despite this massive opportunity, current solutions require significant technical expertise, leaving millions of potential creators unable to participate in the benefits of AI Ecommerce. FreshFront eliminates these barriers creating the first truly accessible e-commerce platform with integrated AI features for store owners and their customers. AI-driven personalization and predictive analytics are key to enhancing the customer journey, improving conversion rates, and increasing customer lifetime value.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader><CardTitle>Our Solution</CardTitle></CardHeader>
-              <CardContent>
-                <p>FreshFront is an AI-first platform that transforms anyone into an e-commerce entrepreneur in minutes, not months. Our proprietary AI stack generates complete stores; designs, products, collections, site content, and marketing materials from a single prompt. The platform creates a virtuous ecosystem where creators, managers, and customers all benefit from shared success.</p>
+                <p>The digital creator economy is a rapidly expanding market projected to reach nearly $500 billion by 2027, driven by over 400 million global creators. A significant market gap exists as current e-commerce solutions require technical skills, creating a barrier for the 64% of amateur creators. FreshFront is an AI-first platform that transforms anyone into an e-commerce entrepreneur in minutes, not months. Our proprietary AI stack generates complete stores—designs, products, collections, site content, and marketing materials—from a single prompt, eliminating technical hurdles. By creating a virtuous ecosystem where creators, managers, and customers all benefit, FreshFront empowers anyone to capitalize on the immense and growing demand within the creator economy.</p>
               </CardContent>
             </Card>
           </div>
@@ -201,138 +195,105 @@ const InvestorPackage = () => {
       </Section>
 
       <Section id="market">
-        <SectionTitle>Market Analysis & Opportunity</SectionTitle>
-        <div className="grid md:grid-cols-1 gap-8 mb-12">
-          <Card>
-            <CardHeader><CardTitle>Market Statistics</CardTitle></CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside space-y-2">
-                <li><strong>Ecommerce Platform Market:</strong> $9.4B in 2024, projected to reach $23.27B by 2030.</li>
-                <li><strong>Print on Demand Market:</strong> $10.2B in 2024, projected to reach $42.64B by 2030.</li>
-                <li><strong>Global Artificial Intelligence Market:</strong> $279.22B in 2024, projected to reach $1.81T by 2030.</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <Card>
-            <CardHeader><CardTitle>Serviceable Addressable Market (SAM)</CardTitle></CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside space-y-2">
-                <li><strong>Target Creators:</strong> Potential 50M+ professional creators globally with audiences who would buy merch. Source: Goldman Sachs "The Creator Economy" Report 2023</li>
-                <li><strong>28 Million Ecommerce stores online.</strong></li>
-                <li><strong>SAM Value:</strong> $150B+ serviceable market.</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader><CardTitle>Revenue Model</CardTitle></CardHeader>
-            <CardContent>
-              <p>Our revenue model is designed for scalability and diversification, ensuring multiple income streams that grow with our user base. We focus on a combination of transaction-based fees and recurring subscriptions, creating a stable and predictable financial future.</p>
-              <Button variant="outline" className="mt-4" onClick={() => scrollToSection('financial-projections')}>View Model</Button>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader><CardTitle>Unit Economics</CardTitle></CardHeader>
-            <CardContent>
-              <ul className="list-disc list-inside space-y-2">
-                <li><strong>Customer Acquisition Cost (CAC):</strong> $28 (blended average).</li>
-                <li><strong>Lifetime Value (LTV):</strong> $1,591 (Subscription + fees).</li>
-                <li><strong>LTV/CAC Ratio:</strong> 57:1 (demonstrating significant return on customer acquisition).</li>
-                <li><strong>Payback Period:</strong> 1 month</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </div>
+        <SectionTitle>The Creator Economy</SectionTitle>
+        <Card className="mb-8">
+          <CardHeader><CardTitle>Executive Summary</CardTitle></CardHeader>
+          <CardContent>
+            <p>The digital creator economy stands as a monumental and rapidly expanding sector within the global digital landscape. This report provides a comprehensive overview of its immense scale, projected growth, and strategic importance, dissecting the digital creator market.</p>
+            <p className="mt-4">The digital creator economy represents a dynamic ecosystem where individuals leverage their creative skills to produce and monetize content across diverse online platforms. This encompasses a broad spectrum of professionals and hobbyists who utilize technology to engage audiences, cultivate communities, and establish personal brands. The foundation of this economy rests heavily on social media platforms, increasingly sophisticated AI-driven tools, and the emergence of decentralized platforms, all of which empower creators to operate and monetize their content with greater autonomy.</p>
+            <p className="mt-4">The global creator economy is a multi-hundred-billion-dollar market, consistently projected for exponential growth despite some variability in current valuation estimates. In 2024, the market's valuation ranges from approximately $125.11 billion to $191.55 billion, and even up to $300 billion by other accounts. The segment specifically focused on creator economy platforms alone was valued at $161.97 billion in 2024. This range in market size estimates reflects the nascent and rapidly evolving nature of the market, where different research firms define and measure the "creator economy" with varying scopes. For instance, some estimates may focus solely on direct creator earnings, while others encompass supporting infrastructure, brand expenditure on influencer marketing, and platform revenues. This variability indicates a lack of standardized metrics and a market that is still defining itself. For investors, this suggests significant growth potential but also inherent complexities in precise measurement. For service providers, it highlights a fragmented market where clear value propositions are essential. This also presents an opportunity for analytics and market intelligence firms to develop more precise and universally accepted measurement frameworks.</p>
+            <p className="mt-4">Looking ahead, the market is expected to reach $436.71 billion by 2029, growing at a Compound Annual Growth Rate (CAGR) of 28.4%. Other projections indicate a rise to $528.39 billion by 2030 at a CAGR of 22.5%, or even a substantial $1,072.8 billion by 2034 at a CAGR of 21.8%. The creator economy platforms market alone is forecast to reach $701.06 billion by 2034, with a CAGR of 15.8%. Forecasts from Goldman Sachs suggest the broader creator economy could nearly double to $480 billion by 2027, or even $500 billion by 2027. North America consistently maintains a dominant market share, exceeding 37% in 2024.</p>
+          </CardContent>
+        </Card>
+        <Card className="mb-8">
+          <CardHeader><CardTitle>1. Introduction: Defining the Digital Creator Economy</CardTitle></CardHeader>
+          <CardContent>
+            <h4 className="font-bold">What is a Digital Creator?</h4>
+            <p>A digital creator is an individual who conceptualizes, produces, and publishes original content across various online platforms, each catering to a specific audience. This encompasses a wide array of content formats, including written articles, photography, videos, and audio productions. Unlike traditional media creators who might have primarily worked in print, television, or radio, digital creators consist of mainly Gen Z & Alpha who specifically craft experiences intended for consumption (mainly social media) on screens—be it a smartphone, tablet, computer, or smart TV.</p>
+            <p className="mt-4">A crucial distinction exists between a digital creator and an influencer, despite significant overlap. Digital creators primarily focus on crafting original, high-quality, and often niche-specific content. Their value is derived from the unique content they produce, whether it stems from their expertise, passion, or artistic skill. Their objective is to entertain, educate, or inspire their audience, often contributing novel and unique perspectives to the online landscape. An influencer, conversely, typically leverages a significant following and credibility within a specific online community to promote products, services, or ideas. While influencers may also create content, their primary focus is on shaping perceptions and driving engagement around brands. This distinction between "digital creator" and "influencer" is not merely semantic; it signifies a fundamental shift in value perception within the digital ecosystem. The emphasis has moved from simple reach or follower count, often associated with traditional influencer marketing, towards authenticity, specialized knowledge, and deep audience engagement. This evolution suggests that for brands, effective engagement now requires moving beyond one-off sponsored posts to deeper, more collaborative partnerships that genuinely align with a creator's authentic content and established audience relationships. For platforms and tool providers, this implies a growing necessity to support robust content creation and community management tools, rather than solely focusing on monetization or reach metrics.</p>
+            <h4 className="font-bold mt-4">Key Categories of Digital Creators</h4>
+            <p>The digital creator landscape is remarkably diverse, encompassing a multitude of specializations that cater to varied audiences and content formats:</p>
+            <ul className="list-disc list-inside space-y-2 mt-2">
+              <li><strong>Visual Artists:</strong> This category includes Painters/Illustrators & Graphic Designers, who are adept at creating compelling images, logos, and layouts for digital and print media. Also prominent are Animators and Motion Graphics Designers, who specialize in bringing static images to life through animation and visual effects for films, television, websites, and digital advertising.</li>
+              <li><strong>Content Producers:</strong> This broad group includes general Content Creators who produce a wide array of content such as blog posts, videos, podcasts, and social media updates, skilled in crafting engaging narratives for specific niches. A more specialized segment comprises Video Producers and Editors, who manage all aspects of video content creation, from scripting and filming to post-production, essential for entertainment, digital marketing, and independent creators.</li>
+              <li><strong>Interactive & Community-Focused Creators:</strong> This segment includes Streamers and Influencers, who build communities around their personalities and interests on platforms like Twitch, YouTube Live, or Instagram, engaging audiences in real-time while promoting their own merch. Additionally, UX/UI Designers are vital digital creators responsible for optimizing the usability and design of digital products like websites and applications, ensuring seamless user experiences. The broader creator economy also integrates bloggers, vloggers, and podcasters, all of whom leverage technology to engage audiences and cultivate their personal brands.</li>
+            </ul>
+            <h4 className="font-bold mt-4">The Ecosystem of the Creator Economy</h4>
+            <p>The great expansion of the digital creator economy is intricately linked to a supportive ecosystem. This environment is primarily fueled by the pervasive adoption of social media platforms such as TikTok & Instagrams Creator Marketplaces, the continuous development of AI-driven tools, and the increasing proliferation of decentralized platforms. These interconnected elements collectively empower creators to monetize their skills and content independently, fostering a dynamic digital marketplace. The comprehensive nature of this economy extends beyond individual creators to encompass the entire infrastructure that supports them, including content production tools, C2C (Creator to Creator) networking, sophisticated analytics platforms for performance tracking, and the underlying digital infrastructure that facilitates content delivery and monetization.</p>
+          </CardContent>
+        </Card>
+        <Card className="mb-8">
+          <CardHeader><CardTitle>2. Total Addressable Market (TAM) for Digital Creators</CardTitle></CardHeader>
+          <CardContent>
+            <h4 className="font-bold">Global Market Size and Projections (2024-2034)</h4>
+            <p>The global creator economy exhibits a substantial and rapidly expanding market value. In 2024, its valuation is estimated to be approximately $191.55 billion, a figure that some sources indicate as the 2025 valuation with 2024 at $156.37 billion. Other reports place the 2024 value at $125.11 billion, $149.4 billion, $250 billion, or even $300 billion. The market specifically for creator economy platforms was valued at $161.97 billion in 2024. This variability in current market valuations underscores the complexity inherent in defining and measuring this evolving market, as different methodologies may include or exclude various components of the ecosystem.</p>
+            <p className="mt-4">The market is projected for exponential growth over the next decade. It is expected to grow from $125.11 billion in 2024 to $160.91 billion in 2025 at a CAGR of 28.6%, with projections reaching $436.71 billion by 2029 at a CAGR of 28.4%. Other forecasts predict it will hit $528.39 billion by 2030, growing at a CAGR of 22.5% from a 2023 base of $127.65 billion. A more expansive projection indicates a market worth around $1,072.8 billion by 2034, originating from $149.4 billion in 2024, demonstrating a robust CAGR of 21.8%. The creator economy platforms market alone is expected to reach $701.06 billion by 2034, exhibiting a CAGR of 15.8%. Shorter-term forecasts from Goldman Sachs suggest the market could nearly double to $480 billion by 2027, or even $500 billion by 2027.</p>
+          </CardContent>
+        </Card>
+        <Card className="mb-8">
+          <CardHeader><CardTitle>3. Serviceable Available Market (SAM) for Digital Creators</CardTitle></CardHeader>
+          <CardContent>
+            <h4 className="font-bold">Segmentation by Creator Type</h4>
+            <p>The digital creator market is distinctly segmented by the level of professional engagement:</p>
+            <ul className="list-disc list-inside space-y-2 mt-2">
+                <li><strong>Amateur Creators:</strong> This segment constitutes the majority of the market, accounting for 64.1% of creators in 2024. Their dominance is primarily driven by the low entry barriers to content creation, facilitated by widespread access to smartphones, intuitive editing applications, generative AI and readily available monetization tools on popular platforms like TikTok, YouTube, and Instagram.</li>
+                <li><strong>Professional Creators:</strong> This segment comprises 35.9% of the market in 2024, representing individuals who pursue content creation as a structured, full-time career.</li>
+            </ul>
+            <h4 className="font-bold mt-4">Market Share by Content Format</h4>
+            <p>The digital content landscape is heavily influenced by consumer preferences for various formats:</p>
+            <ul className="list-disc list-inside space-y-2 mt-2">
+                <li><strong>Video Content:</strong> This format unequivocally dominates the market, holding more than a 23.8% share in 2024 and accounting for over 50% of the revenue share within the creator economy platforms market.</li>
+                <li><strong>Music Content:</strong> Following video, music content holds an 18.3% share, a segment boosted by the rising popularity of short-form audio, independent artists, and streaming growth.</li>
+            </ul>
+          </CardContent>
+        </Card>
+        <Card className="mb-8">
+          <CardHeader><CardTitle>4. Monetization Strategies and Revenue Streams</CardTitle></CardHeader>
+          <CardContent>
+            <h4 className="font-bold">Primary Monetization Methods and Their Proportions (2024)</h4>
+            <p>Digital creators employ a diverse array of methods to monetize their content and audience engagement:</p>
+            <ul className="list-disc list-inside space-y-2 mt-2">
+                <li><strong>Brand Collaborations:</strong> This stands as the top monetization method, accounting for 23.5% of revenue share.</li>
+                <li><strong>Advertising Revenue:</strong> This method accounts for 20.9% of the market share.</li>
+                <li><strong>Subscriptions:</strong> This model holds a 20.0% share of monetization methods.</li>
+                <li><strong>Affiliate Marketing:</strong> This method accounts for 12.5% of creator monetization.</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </Section>
+      <Section id="creator-platforms">
+        <SectionTitle>Recent Creator Platforms</SectionTitle>
         <div className="grid md:grid-cols-2 gap-8">
-          <Card>
-            <CardHeader><CardTitle>Market Gaps & Pain Points</CardTitle></CardHeader>
-            <CardContent>
-              <h4 className="font-bold mb-2">Current Creator Challenges</h4>
-              <ol className="list-decimal list-inside space-y-2">
-                <li><strong>Technical Barriers:</strong> 78% of creators lack technical skills for e-commerce</li>
-                <li><strong>Design Limitations:</strong> 84% struggle with professional design creation</li>
-                <li><strong>Marketing Complexity:</strong> 92% find digital marketing overwhelming</li>
-                <li><strong>Time Investment:</strong> Average 40+ hours to launch basic store</li>
-                <li><strong>High Failure Rate:</strong> 67% of creator businesses fail within first year</li>
-              </ol>
-              <h4 className="font-bold mt-6 mb-2">Consumer Problems</h4>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                  <li>Abandoned Carts</li>
-                  <li>Lack of Personalization</li>
-                  <li>Outdated experiences</li>
-                  <li>Lack of Social Media friendly UX's</li>
-              </ul>
-              <h4 className="font-bold mt-6 mb-2">Platform Problems</h4>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                  <li><strong>Shopify:</strong> limitations, complex</li>
-                  <li><strong>Etsy:</strong> no customization, saturated marketplace</li>
-                  <li><strong>WooCommerce/BigCommerce:</strong> relevant for scaling, not to Gen-Z Creators</li>
-                  <li><strong>Square/TeeSpring:</strong> basic, lacks AI features</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader><CardTitle>Competitive Landscape</CardTitle></CardHeader>
-            <CardContent>
-              <h4 className="font-bold mb-2">Direct Competitors</h4>
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="text-left">
-                    <th className="p-2">Platform</th>
-                    <th className="p-2">Strengths</th>
-                    <th className="p-2">Weaknesses</th>
-                    <th className="p-2">Market Share</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="p-2">Shopify</td>
-                    <td className="p-2">Established, comprehensive</td>
-                    <td className="p-2">Complex, expensive, technical</td>
-                    <td className="p-2">32%</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2">Etsy</td>
-                    <td className="p-2">Easy start, built-in audience</td>
-                    <td className="p-2">Limited control, high fees</td>
-                    <td className="p-2">18%</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2">Printful</td>
-                    <td className="p-2">Good POD integration</td>
-                    <td className="p-2">No store creation, technical</td>
-                    <td className="p-2">8%</td>
-                  </tr>
-                  <tr>
-                    <td className="p-2">Square</td>
-                    <td className="p-2">Integrated payments</td>
-                    <td className="p-2">Limited customization</td>
-                    <td className="p-2">12%</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h4 className="font-bold mt-6 mb-2">FreshFront Competitive Advantages</h4>
-              <ol className="list-decimal list-inside space-y-2">
-                <li><strong>AI-First Architecture:</strong> Only platform with comprehensive AI automation</li>
-                <li><strong>Zero Technical Knowledge Required:</strong> Completely eliminates setup barriers</li>
-                <li><strong>Complete Ecosystem:</strong> End-to-end solution from design to fulfillment</li>
-                <li><strong>Manager Network:</strong> Unique scaling model through service providers</li>
-                <li><strong>Greater Creator Economy:</strong> Starting the trend of Social Media influencer POD merch</li>
-              </ol>
-              <h4 className="font-bold mt-6 mb-2">Solutions for Creators, for their Customers</h4>
-              <ul className="list-disc list-inside space-y-2">
-                  <li>Al-enhanced Product Pages</li>
-                  <li>Realtime Al Support Assistants</li>
-                  <li>Al Product Visualization</li>
-                  <li>Templates designed for Social Media conversions</li>
-                  <li>Instant Prompt to Store</li>
-                  <li>AI Customaztion & Editing Tool</li>
-                  <li>Al Content & Product Tools</li>
-                  <li>Low Fees and Pricing</li>
-              </ul>
-            </CardContent>
-          </Card>
+        <Card>
+          <CardHeader><CardTitle>Instagram Creator Marketplace</CardTitle></CardHeader>
+          <CardContent>
+            <img src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_6489.webp?alt=media&token=bcedd350-1b39-4e63-9de3-327b95413408" alt="Instagram Creator Marketplace" className="rounded-lg mb-4" />
+            <p>Connects brands and creators within the Meta ecosystem. Features AI-boosted discovery, direct messaging, and campaign management. No explicit platform fee; rates are negotiated directly. Strengths include streamlined discovery and high potential for ROI, but creators have expressed dissatisfaction with low-budget campaigns.</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader><CardTitle>TikTok Creator Marketplace</CardTitle></CardHeader>
+          <CardContent>
+            <img src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_6497.webp?alt=media&token=f017ed5c-13ca-41e6-916a-7b019309f558" alt="TikTok Creator Marketplace" className="rounded-lg mb-4" />
+            <p>TikTok's official platform for collaborations. It's free to use and features a vast creator pool, fostering authentic, trend-driven content. While there are no platform fees for collaborations, the high follower requirement for creators can be a limitation.</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader><CardTitle>YouTube BrandConnect</CardTitle></CardHeader>
+          <CardContent>
+            <img src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_6500.gif?alt=media&token=b2f52bcb-657a-4294-9194-a13c94ae197b" alt="YouTube BrandConnect" className="rounded-lg mb-4" />
+            <p>A premium service for larger brands and macro-influencers on YouTube. It offers deep integration with Google Ads, extensive analytics (including Brand Lift metrics), and robust compliance support. It comes with a 10% service fee and is currently invite-only.</p>
+            <h4 className="font-bold mt-4">Product Cards for Google Merchants</h4>
+            <p>YouTube offers great opportunities to showcase your own products, be discovered and allow YouTube audiences to check out on your website. There are several ways to show your products on YouTube, depending on which programs you participate in.</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader><CardTitle>Shopify App Marketplace</CardTitle></CardHeader>
+          <CardContent>
+            <img src="https://firebasestorage.googleapis.com/v0/b/freshfront-c3181.firebasestorage.app/o/IMG_6502.webp?alt=media&token=ced590cd-5c7b-4756-b142-478ffa3e42fd" alt="Shopify App Marketplace" className="rounded-lg mb-4" />
+            <p>An indispensable extension of the Shopify platform, with over 8,000 apps enhancing capabilities for over 20 million stores. It allows for a high degree of customization and operational efficiency. Challenges include app saturation, quality inconsistencies, and potential hidden costs.</p>
+          </CardContent>
+        </Card>
         </div>
       </Section>
 
@@ -354,7 +315,7 @@ const InvestorPackage = () => {
                   <ul className="list-disc list-inside space-y-1 mt-2">
                     <li><strong>Google GenAI SDK:</strong> Gemini Flash, Pro, Imagen, Veo models used for product analysis, content generation, store optimization, product recognition and design optimization, and customer support as well as other tasks.</li>
                     <li><strong>Apple Foundation Models:</strong> On device AI models used to create blogs, plan templates and site content changes offline (requires no internet connection)</li>
-                    <li><strong>Anthropic Claude:</strong> Involved in template planning & code generation, assisting the gemini models.</li>
+                    <li><strong>Anthropic Claude:</strong> Sonnet 4 involved in template planning & code generation, assisting the gemini models.</li>
                     <li><strong>OpenAI:</strong> GPT Image 1 model used for advanced design requiring accurate text and attention to detail</li>
                     <li><strong>Meshy AI:</strong> Used to generate 3D models of Creators products for the integrated AR viewer on product pages</li>
                     <li><strong>Custom LLMs:</strong> Fine-tuned models for e-commerce specific tasks</li>
@@ -363,11 +324,11 @@ const InvestorPackage = () => {
                     <div>
                       <h4 className="font-bold">Platform Components</h4>
                       <ol className="list-decimal list-inside space-y-1 mt-2">
-                        <li>Store Builder: Three creation modes (Prompt, Step-by-Step, Import)</li>
+                        <li>Store Builder: 3 creation modes (Prompt, Step-by-Step, Import) & 3 store types (Inventory, Print on Demand, Dropshipping)</li>
                         <li>Design Engine: AI-powered product design & store template generation</li>
                         <li>Content Management: Automated copywriting, images, video and SEO</li>
                         <li>Marketing Suite: Automated ad creation and campaign management</li>
-                        <li>Fulfillment Integration: Seamless print-on-demand and dropshipping</li>
+                        <li>Fulfillment Integration: Seamless print-on-demand and dropshipping integration</li>
                         <li>Analytics Dashboard: Comprehensive performance tracking</li>
                       </ol>
                     </div>
@@ -564,18 +525,19 @@ const InvestorPackage = () => {
         </Card>
       </Section>
 
-      <Section id="financial-projections">
-        <SectionTitle>Financial Projections</SectionTitle>
-        <Card>
-          <CardHeader><CardTitle>Annual Revenue Projection</CardTitle></CardHeader>
-          <CardContent style={{ height: '500px' }}>
+      <section id="financial-projections" className="py-20">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <SectionTitle>Financial Projections</SectionTitle>
+        </div>
+        <Card className="w-full rounded-none border-x-0">
+          <CardHeader className="max-w-7xl mx-auto px-4 md:px-8"><CardTitle>Annual Revenue Projection</CardTitle></CardHeader>
+          <CardContent style={{ height: '500px' }} className="px-0">
             <ResponsiveBar
               data={[
-                { stream: 'Paid Creators', revenue: 64.5 },
-                { stream: 'Free Creators', revenue: 25.5 },
-                { stream: 'Managers', revenue: 10 },
-                { stream: 'Withdrawal Fees', revenue: 0.1 },
-                { stream: 'Delegated Fees', revenue: -2.5 },
+                { stream: 'Paid Creators', revenue: 40.4, color: '#2457ff' },
+                { stream: 'Free Creators', revenue: 39.5, color: '#017852' },
+                { stream: 'Creator Withdrawal Fees', revenue: 15.2, color: '#a724ff' },
+                { stream: 'Managers', revenue: 4.9, color: '#ffc524' },
               ]}
               keys={['revenue']}
               indexBy="stream"
@@ -583,7 +545,7 @@ const InvestorPackage = () => {
               padding={0.3}
               valueScale={{ type: 'linear' }}
               indexScale={{ type: 'band', round: true }}
-              colors={'#017852'}
+              colors={{ datum: 'data.color' }}
               borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
               axisTop={null}
               axisRight={null}
@@ -604,65 +566,111 @@ const InvestorPackage = () => {
                 legendOffset: -40,
                 format: value => `${value}%`,
               }}
-              labelSkipWidth={12}
-              labelSkipHeight={12}
+              label={bar => (bar.data.stream === 'Delegated Fees' ? `${bar.value}%` : '')}
               labelTextColor={'white'}
-              legends={[
-                {
-                  dataFrom: 'keys',
-                  anchor: 'bottom-right',
-                  direction: 'column',
-                  justify: false,
-                  translateX: 120,
-                  translateY: 0,
-                  itemsSpacing: 2,
-                  itemWidth: 100,
-                  itemHeight: 20,
-                  itemDirection: 'left-to-right',
-                  itemOpacity: 0.85,
-                  symbolSize: 20,
-                  effects: [
-                    {
-                      on: 'hover',
-                      style: {
-                        itemOpacity: 1,
-                      },
-                    },
-                  ],
-                },
-              ]}
               animate={true}
-              tooltip={({ id, value, color }) => (
-                <strong style={{ color }}>
-                  {id}: {value}%
+              tooltip={({ indexValue, value }) => (
+                <strong style={{ color: 'black' }}>
+                  {`${indexValue}: ${value}%`}
                 </strong>
               )}
             />
           </CardContent>
         </Card>
-        <Card className="mt-8">
-          <CardHeader><CardTitle>Financial Model Structure</CardTitle></CardHeader>
-          <CardContent>
-            <p>The financial model is built upon a detailed breakdown of our user base, segmented into three primary groups: Free Creators, Paid Creators, and Managers. Revenue is projected by analyzing subscription fees and transaction-based income from each segment. The model also accounts for the unique fee delegation system, where Managers can set their own rates for onboarded creators, and a platform fee is applied to Manager withdrawals. This comprehensive approach provides a clear and transparent view of our potential earnings.</p>
-            <h4 className="font-bold mt-6 mb-2">Fee Structure</h4>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Creator Subscription Fee:</strong> $29.99/month</li>
-              <li><strong>Manager Subscription Fee:</strong> $99/month</li>
-              <li><strong>Standard Transaction Fee:</strong> 2.9% + $0.30 per transaction</li>
-              <li><strong>Manager Withdrawal Fee:</strong> 2.9% (Managers only)</li>
-              <li><strong>Creator Withdrawal Fee:</strong> 0%</li>
-              <li><strong>Manager Fee Delegation:</strong> Managers can set a custom fee (1-5% typical) on their referred creators' sales, which is deducted from the creators' earnings and paid to the manager.</li>
-            </ul>
-            <h4 className="font-bold mt-6 mb-2">Revenue Breakdown (Year 3 with 7k users, 250 managers)</h4>
-            <ul className="list-disc list-inside space-y-2">
-              <li><strong>Paid Creators:</strong> 2,100 users * $29.99/month * 12 months + (2,100 users * avg $12,000 revenue * 0.029) + (2,100 users * average 2,200 transactions * $0.30) = $2,872,548</li>
-              <li><strong>Free Creators:</strong> (4,900 users * avg $1,500 revenue * 0.029) + (4,900 users * average 628 transactions * $0.30) = $1,136,310</li>
-              <li><strong>Managers:</strong> 250 managers * $99/month * 12 months + (50 stores * avg $25,000 revenue * 0.029) + (50 stores * average 7,335 transactions * $0.30) = $443,275</li>
-              <li><strong>Manager Withdrawal Fee:</strong> $111,600 * 0.029 = $3,236</li>
-            </ul>
-          </CardContent>
-        </Card>
-      </Section>
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+            <Card className="mt-8">
+              <CardHeader><CardTitle>Financial Model Structure</CardTitle></CardHeader>
+              <CardContent>
+                <h4 className="font-bold mt-4 mb-2">Fee Structure</h4>
+                <ul className="list-disc list-inside space-y-2">
+                  <li><strong>Creator Subscription Fee:</strong> $29.99/month</li>
+                  <li><strong>Manager Subscription Fee:</strong> $99/month</li>
+                  <li><strong>Standard Transaction Fee:</strong> 2.9% + $0.30 per transaction</li>
+                  <li><strong>Manager Withdrawal Fee:</strong> 2.9%</li>
+                  <li><strong>Creator Withdrawal Fee:</strong> 2.9%</li>
+                  <li><strong>Manager Fee Delegation:</strong> Managers can set a custom fee (standard 2%) on their referred creators' sales, which is deducted from the creators' earnings and paid to the manager.</li>
+                </ul>
+
+                <h4 className="font-bold mt-6 mb-2">User Base Breakdown</h4>
+                <ul className="list-disc list-inside space-y-2">
+                    <li><strong>Total Users:</strong> 7,000</li>
+                    <li><strong>Paid Creators:</strong> 1,800 users (1,800 stores)</li>
+                    <li><strong>Free Creators:</strong> 5,200 users</li>
+                    <li><strong>Managers:</strong> 250 managers (managing 300 stores)</li>
+                </ul>
+
+                <h4 className="font-bold mt-6 mb-2">Revenue Calculations</h4>
+                <p className="font-semibold">Paid Creators (1,800 users with stores)</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Subscription Revenue:</strong> 1,800 users × $29.99/month × 12 months = $647,676</li>
+                    <li><strong>Transaction Fee Revenue:</strong> 1,800 stores × $8,000 avg revenue × 0.029 = $417,600</li>
+                    <li><strong>Per-Transaction Fees:</strong> 1,800 users × 1,833 transactions × $0.30 = $989,940</li>
+                    <li><strong>Paid Creators Total:</strong> $2,055,216</li>
+                </ul>
+                <p className="font-semibold mt-4">Free Creators (5,200 users)</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Transaction Fee Revenue:</strong> 5,200 users × $2,500 avg revenue × 0.029 = $377,000</li>
+                    <li><strong>Per-Transaction Fees:</strong> 5,200 users × 1,047 transactions × $0.30 = $1,633,320</li>
+                    <li><strong>Free Creators Total:</strong> $2,010,320</li>
+                </ul>
+                <p className="font-semibold mt-4">Managers (250 managers managing 300 stores)</p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Subscription Revenue:</strong> 250 managers × $99/month × 12 months = $297,000</li>
+                    <li className="text-red-600"><strong>- Manager Fee Collection:</strong> 300 stores × $8,000 avg revenue × 0.02 = $48,000 (paid out to managers)</li>
+                    <li><strong>+ Withdrawal Fee on Manager Collections:</strong> $48,000 × 0.029 = $1,392 (platform revenue)</li>
+                    <li><strong>Managers Net Revenue:</strong> $250,392</li>
+                </ul>
+
+                <h4 className="font-bold mt-6 mb-2">Creator Withdrawal Fees</h4>
+                <ul className="list-disc list-inside space-y-2">
+                    <li><strong>Total Creator Transaction Volume:</strong> $27,400,000
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Paid creators: $14,400,000</li>
+                            <li>Free creators: $13,000,000</li>
+                        </ul>
+                    </li>
+                    <li><strong>Platform Fees Collected:</strong> $794,600</li>
+                    <li><strong>Creator Net Balance:</strong> $26,605,400</li>
+                    <li><strong>Creator Withdrawal Fees:</strong> $26,605,400 × 0.029 = $771,557</li>
+                </ul>
+
+                <h4 className="font-bold mt-6 mb-2">Total Revenue Summary</h4>
+                <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200">
+                        <thead className="bg-gray-50">
+                            <tr>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Revenue Stream</th>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-white divide-y divide-gray-200">
+                            <tr><td className="px-6 py-4 whitespace-nowrap">Paid Creators</td><td className="px-6 py-4 whitespace-nowrap">$2,055,216</td></tr>
+                            <tr><td className="px-6 py-4 whitespace-nowrap">Free Creators</td><td className="px-6 py-4 whitespace-nowrap">$2,010,320</td></tr>
+                            <tr><td className="px-6 py-4 whitespace-nowrap">Managers</td><td className="px-6 py-4 whitespace-nowrap">$250,392</td></tr>
+                            <tr><td className="px-6 py-4 whitespace-nowrap">Creator Withdrawal Fees</td><td className="px-6 py-4 whitespace-nowrap">$771,557</td></tr>
+                            <tr className="bg-gray-100 font-bold"><td className="px-6 py-4 whitespace-nowrap">TOTAL ANNUAL REVENUE</td><td className="px-6 py-4 whitespace-nowrap">$5,087,485</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 className="font-bold mt-6 mb-2">Key Metrics</h4>
+                <ul className="list-disc list-inside space-y-2">
+                    <li><strong>Total Transaction Volume:</strong> $29,800,000
+                        <ul className="list-disc list-inside space-y-1 ml-4">
+                            <li>Paid creator stores: $14,400,000</li>
+                            <li>Free creators: $13,000,000</li>
+                            <li>Manager-operated stores: $2,400,000</li>
+                        </ul>
+                    </li>
+                    <li><strong>Average Revenue Per User (ARPU):</strong> $733.64</li>
+                    <li><strong>Average Revenue Per Paid User:</strong> $1,141.78</li>
+                    <li><strong>Platform Take Rate:</strong> 17.23% of total transaction volume</li>
+                    <li><strong>Manager Economics:</strong> Managers collect $48,000 total, net $46,608 after platform withdrawal fee</li>
+                </ul>
+              </CardContent>
+            </Card>
+        </div>
+      </section>
 
       <Section id="budget">
         <SectionTitle>Investment Requirement & Use of Funds</SectionTitle>
@@ -671,12 +679,12 @@ const InvestorPackage = () => {
           <CardContent style={{ height: '500px' }}>
             <ResponsivePie
               data={[
-                { id: 'Personnel & Operations', label: 'Personnel & Operations (20%)', value: 20, color: '#3b3be3' },
-                { id: 'Technology Development', label: 'Technology Development (20%)', value: 20, color: '#0ed60b' },
+                { id: 'Technology Development', label: 'Technology Development (30%)', value: 30, color: '#0ed60b' },
                 { id: 'API Integrations', label: 'API Integrations (5%)', value: 5, color: '#9d00ff' },
                 { id: 'Launch & Marketing', label: 'Launch & Marketing (30%)', value: 30, color: '#ff42f9' },
                 { id: 'Production Infrastructure', label: 'Production Infrastructure (10%)', value: 10, color: '#131417' },
                 { id: 'Innovation & Growth', label: 'Innovation & Growth (15%)', value: 15, color: '#00e1ed' },
+                { id: 'Personnel & Operations', label: 'Personnel & Operations (10%)', value: 10, color: '#3b3be3' },
               ]}
               colors={{ datum: 'data.color' }}
               margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
@@ -726,22 +734,14 @@ const InvestorPackage = () => {
         <Card>
           <CardHeader><CardTitle>Detailed Budget Allocation</CardTitle></CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-1 gap-6">
               <Card>
-                <CardHeader><CardTitle>Personnel & Operations (20%)</CardTitle></CardHeader>
+                <CardHeader><CardTitle>Technology Development (30%)</CardTitle></CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside text-sm space-y-1">
-                    <li>Founder Stipends (minimal personal expenses)</li>
-                    <li>Part-Time Support (marketing and customer service)</li>
-                    <li>General Admin (legal, accounting, business setup)</li>
-                  </ul>
-                  <p className="text-xs mt-2"><strong>Strategy:</strong> Lean team structure with founder experience handling core development with AI coding agent acceleration, minimal overhead burn</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader><CardTitle>Technology Development (20%)</CardTitle></CardHeader>
-                <CardContent>
-                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>Web (Complete)</li>
+                    <li>iOS & Android App Development</li>
+                    <li>Shopify App Development</li>
                     <li>UI/UX Design (professional design system)</li>
                     <li>React Development (store builder interface)</li>
                     <li>Mobile Development (iOS and Android apps)</li>
@@ -772,6 +772,11 @@ const InvestorPackage = () => {
                     <li>Creator Launch Program (resources & incentives for early users, driving traffic to their stores as well as FF)</li>
                     <li>Digital Advertising (Meta, Google, TikTok, YouTube)</li>
                     <li>Platform-Specific Marketing (LinkedIn, X (Twitter)</li>
+                    <li>Shopify Ads reaching merchants directly on Shopify</li>
+                    <li>Facebook/Instagram Ads targeting merchants with Subscription Pixel</li>
+                    <li>TikTok Ads targeting Shops with Subscription Pixel</li>
+                    <li>Google (App Campaigns) & YouTube Ads with Subscription Pixel</li>
+                    <li>Apple App Store and Google Play Store Ads</li>
                   </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Aggressive customer acquisition during critical launch window</p>
                 </CardContent>
@@ -784,7 +789,7 @@ const InvestorPackage = () => {
                     <li>Database Systems (scalable data management)</li>
                     <li>API Costs (production-level integrations)</li>
                   </ul>
-                  <p className="text-xs mt-2"><strong>Strategy:</strong> Reliable & Scalable infrastructure ready for rapid user growth</p>
+                  <p className="text-xs mt-2"><strong>Strategy:</strong> Reliable & Scalable infrastructure ready for rapid user growth, leveraging Google Cloud for efficient hosting, storage, database, and API management.</p>
                 </CardContent>
               </Card>
               <Card>
@@ -797,7 +802,26 @@ const InvestorPackage = () => {
                     <li>Content Creation (generative AI, educational and marketing content)</li>
                     <li>Security & Compliance (professional audits)</li>
                   </ul>
+                  <h4 className="font-bold mt-4">Updates</h4>
+                  <ul className="list-disc list-inside text-sm space-y-1 mt-2">
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>Substack</li>
+                    <li>Twitter</li>
+                    <li>Emails</li>
+                    <li>LinkedIn</li>
+                  </ul>
                   <p className="text-xs mt-2"><strong>Strategy:</strong> Continuous improvement and market expansion</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader><CardTitle>Personnel & Operations (10%)</CardTitle></CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside text-sm space-y-1">
+                    <li>CFO</li>
+                    <li>General Admin (legal, accounting, business setup)</li>
+                  </ul>
+                  <p className="text-xs mt-2"><strong>Strategy:</strong> Lean team structure with founder experience handling core development with AI coding agent acceleration, minimal overhead burn</p>
                 </CardContent>
               </Card>
             </div>
@@ -814,25 +838,25 @@ const InvestorPackage = () => {
               <h4 className="font-bold">AI Model Dependencies</h4>
               <p><strong>Risk:</strong> Reliance on third-party AI services</p>
               <p><strong>Mitigation:</strong> Multi-provider strategy with fallbacks in place, proprietary model development</p>
-              <p><strong>Timeline:</strong> Custom models in development by Month 18 with recursive training</p>
+              <p><strong>Timeline:</strong> Custom models in development by Month 18 trained with human data & recursive self improvement</p>
               <h4 className="font-bold mt-4">Scalability Challenges</h4>
               <p><strong>Risk:</strong> Infrastructure limitations during rapid growth</p>
-              <p><strong>Mitigation:</strong> Cloud-native architecture, auto-scaling systems (Google Cloud)</p>
+              <p><strong>Mitigation:</strong> Rate limited generation, cloud-native architecture, reliable scaling systems (Google Cloud)</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader><CardTitle>Market Risks</CardTitle></CardHeader>
             <CardContent>
               <h4 className="font-bold">Competition from Established Players</h4>
-              <p><strong>Risk:</strong> Shopify, Adobe, or others launch competing AI features</p>
-              <p><strong>Mitigation:</strong> First-mover advantage, superior AI integration [we are the ChatGPT to Siri and the Anthropic to OpenAI]]</p>
-              <p><strong>Competitive Moat:</strong> 18-month technology lead expected (unique modular scaffold systems in place and are constantly optimized, interchangeable with new AI models as they improve at an exponential rate)</p>
+              <p><strong>Risk:</strong> Shopify or others launch competing AI features</p>
+              <p><strong>Mitigation:</strong> First-mover advantage, superior AI integration, features and user experience</p>
+              <p><strong>Competitive Moat:</strong> Non-replicable, intricate background processes with seamless user experience</p>
               <h4 className="font-bold mt-4">Ethical AI Considerations</h4>
               <p><strong>Risk:</strong> Algorithmic bias, data privacy concerns, and lack of transparency in AI-driven marketing.</p>
-              <p><strong>Mitigation:</strong> Continuously audit of our algorithms for bias, provide users with clear data usage policies, and ensure compliance with all relevant privacy regulations.</p>
+              <p><strong>Mitigation:</strong> Train and continuously audit our algorithms for bias, provide users with clear data usage policies, and ensure compliance with privacy regulations.</p>
               <h4 className="font-bold mt-4">Creator Market Saturation</h4>
               <p><strong>Risk:</strong> Limited pool of potential creators ready for stores</p>
-              <p><strong>Mitigation:</strong> Influencer Marketing, Low barrier to entry, Quality over quantity (targeting both creators with businesses and artists not yet monetized)</p>
+              <p><strong>Mitigation:</strong> Influencer Marketing, Low barrier to entry, Business & marketing tutorial content, Quality over quantity (targeting both businesses/merchants and creators not yet monetized)</p>
               <p><strong>Market Size:</strong> 50M+ addressable creators globally</p>
             </CardContent>
           </Card>
@@ -840,12 +864,12 @@ const InvestorPackage = () => {
             <CardHeader><CardTitle>Operational Risks</CardTitle></CardHeader>
             <CardContent>
               <h4 className="font-bold">Fulfillment Partner Dependencies</h4>
-              <p><strong>Risk:</strong> Gooten, Printful or other partners change terms or fail</p>
-              <p><strong>Mitigation:</strong> Alternatives in place for Creators/Managers with Multi-provider integrations, direct partnerships, vertical integration options with in-house POD supplier</p>
-              <p><strong>Contingency:</strong> Budget includes multiple provider integration costs</p>
+              <p><strong>Risk:</strong> Print on Demand supplier change terms or fail</p>
+              <p><strong>Mitigation:</strong> Use alternatives such as Printful and have arrangements in place for in-house POD fulfillment.</p>
+              <p><strong>Contingency:</strong> Budget includes the highest provider integration cost (fallback are more cost effective )</p>
               <h4 className="font-bold mt-4">Regulatory Changes</h4>
-              <p><strong>Risk:</strong> E-commerce, AI, or payment regulations impact operations</p>
-              <p><strong>Mitigation:</strong> Compliance-first approach, legal budget allocation, layer-filtered AI system instructions, robust Stripe integrations</p>
+              <p><strong>Risk:</strong> Ecommerce, AI, or payment regulations impact operations</p>
+              <p><strong>Mitigation:</strong> Compliance-first approach, legal budget allocation, AI system instruction filters, robust Stripe integrations</p>
               <p><strong>Monitoring:</strong> Continuous regulatory tracking and adaptation with 4 step approach (review, learn, apply, comply)</p>
             </CardContent>
           </Card>
@@ -854,11 +878,11 @@ const InvestorPackage = () => {
             <CardContent>
               <h4 className="font-bold">Customer Acquisition Costs</h4>
               <p><strong>Risk:</strong> Rising ad costs reduce unit economics</p>
-              <p><strong>Mitigation:</strong> Diversified marketing channels, organic growth, AI pixel based marketing, improving ad creatives and adapting strategies</p>
-              <p><strong>Buffer:</strong> 39.76% marketing budget provides testing room during ad optimization & pixel warm up to find winning ad configurations</p>
+              <p><strong>Mitigation:</strong> Diversified marketing channels, Organic growth, Lookalike audiences & pixel based marketing (lower cost per conv.), better ad creatives and strategies</p>
+              <p><strong>Buffer:</strong> 30% marketing budget provides testing room during ad optimization & pixel warm up to find winning ads / configurations</p>
               <h4 className="font-bold mt-4">Revenue Concentration</h4>
               <p><strong>Risk:</strong> Over-dependence on single revenue stream</p>
-              <p><strong>Mitigation:</strong> Multiple revenue sources, predictable revenue systems, sustainable economy with multiple roles transacting</p>
+              <p><strong>Mitigation:</strong> Multiple revenue sources (manager & creator subscriptions & fees), predictable & reliable revenue systems (ecosystem built on stripe), sustainable economy with multiple roles transacting</p>
               <p><strong>Diversification:</strong> 4 distinct revenue streams at launch</p>
             </CardContent>
           </Card>
@@ -877,7 +901,7 @@ const InvestorPackage = () => {
                 <li>Store Template Generation: Automated code generation of store templates based on store prompt, niche analysis & more</li>
                 <li>Multi-Modal Content Creation: Integrated text, image, and video generation with unique gene/attribute tag system</li>
                 <li>Conversion Optimization: Built in variant and product visualizer, 3D AR viewer, and realtime AI chat assistant with function calling and MCP integration.</li>
-                <li>Magic Marketing Packages: AI system that generates converting ad copies using realtime search APIs and MCP agents for live market data.</li>
+                <li>Magic Marketing Packages: AI system that generates converting ad copies using realtime search APIs and Agents SDK for live market data.</li>
               </ul>
             </CardContent>
           </Card>
@@ -887,15 +911,15 @@ const InvestorPackage = () => {
               <h4 className="font-bold">Proprietary Datasets</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
                 <li>E-commerce Performance Data: Pixel heat maps, store conversion and sales optimization</li>
-                <li>Product Design Effectiveness: Realism and accuracy consistency across modern design trends and their placement on mockups</li>
+                <li>Marketing Data: Ad campaign results across niches, design trends from Manager to Creator campaigns<a href="mailto:"></a>nd products</li>
                 <li>Creator Behavior: User persona demographics, origin, interaction and success pattern analysis</li>
                 <li>Market Intelligence: Social commerce trend prediction and market demand forecasting</li>
               </ul>
               <h4 className="font-bold mt-4">Competitive Intelligence</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
-                <li><strong>Technology Moat:</strong> Irreducible level of simplicity with one prompt achieving full store generation in under 3 minutes with efficient use flash models</li>
-                <li><strong>Network Effects:</strong> Creator generates store with AI, Managers promotes Creators products, Customer gets the product, Creators get the sale, Managers get the fee</li>
-                <li><strong>Data Advantage:</strong> Each user AI interaction improves the platform, whether it's a Customer visualizing a product, a Manager creating social media content or a Creator editing a design</li>
+                <li><strong>Technology Moat:</strong> Irreducible level of simplicity with one prompt achieving full store generation in under 3 minutes with efficient use of flash models</li>
+                <li><strong>Cross-beneficial:</strong> Creator generates store with AI, Managers promotes Creators products, Customer gets the product, Creators get the sale, Managers get the fee</li>
+                <li><strong>Data Advantage:</strong> AI interactions are studied (by another AI) to improve the platform, whether it's a Customer visualizing a product, a Manager creating social media content or a Creator making updates to their store</li>
               </ul>
             </CardContent>
           </Card>
@@ -912,26 +936,26 @@ const InvestorPackage = () => {
                 <div>
                   <h4 className="font-bold">Phase 1: Creator Launch Program (Months 1-6)</h4>
                   <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-                    <li><strong>Target:</strong> 100 founding creators</li>
-                    <li><strong>Investment:</strong> $14,500 in incentives and support to 100 chosen founders that apply</li>
+                    <li><strong>Target:</strong> 20 creators/influencers</li>
+                    <li><strong>Investment:</strong> $20,000 in incentives and support to 20 Creators earning min. $20k revenue in exchange for posts.</li>
                     <li><strong>Focus:</strong> Product-market fit validation, traffic and testimonials</li>
-                    <li><strong>Success Metrics:</strong> 70%+ creator satisfaction, 50%+ monthly revenue growth</li>
+                    <li><strong>Success Metrics:</strong> Creator satisfaction & brand trust, Increased users & monthly revenue</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-bold">Phase 2: Paid Acquisition Scale (Months 6-18)</h4>
                   <ul className="list-disc list-inside text-sm space-y-1 mt-2">
-                    <li><strong>Investment:</strong> $28,000 in digital advertising</li>
-                    <li><strong>Channels:</strong> Meta, Google, TikTok, YouTube advertising</li>
+                    <li><strong>Investment:</strong> 30% of budget dedicated to digital advertising</li>
+                    <li><strong>Channels:</strong> Meta (FB/Instagram), Google, TikTok, YouTube, X, Apple App Store/Google Play Store, Shopify Marketplace ads</li>
                     <li><strong>Target:</strong> 1,000 active creators by Month 12</li>
-                    <li><strong>Success Metrics:</strong> CAC under $30, LTV/CAC ratio above 50:1</li>
+                    <li><strong>Success Metrics:</strong> CAC under $15, LTV/CAC ratio above 50:1</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-bold">Phase 3: Viral Growth & Network Effects (Months 18+)</h4>
                   <ul className="list-disc list-inside text-sm space-y-1 mt-2">
                     <li><strong>Strategy:</strong> Creator referral programs, manager network expansion</li>
-                    <li><strong>Investment:</strong> Stabilized paid acquisition, shift gears to loyalty/retention</li>
+                    <li><strong>Investment:</strong> Stabilized paid acquisition, shift gears to loyalty/retention for reliance testing</li>
                     <li><strong>Target:</strong> 50%+ growth from organic channels</li>
                     <li><strong>Success Metrics:</strong> Viral coefficient above 1.2</li>
                   </ul>
@@ -945,12 +969,11 @@ const InvestorPackage = () => {
               <CardContent>
                 <h4 className="font-bold">Digital Advertising Allocation</h4>
                 <ul className="list-disc list-inside space-y-1 mt-2">
-                  <li>Meta Ads (28%): Instagram and Facebook creator targeting</li>
-                  <li>Google Ads (25%): Search and display for e-commerce, generative AI keywords</li>
-                  <li>YouTube Ads (25%): Tutorial and success story video content</li>
-                  <li>TikTok Ads (15%): Gen-Z creator and entrepreneur targeting</li>
-                  <li>LinkedIn Ads (5%): B2B manager and agency targeting</li>
-                  <li>Twitter Ads (2%): Industry engagement and thought leadership</li>
+                  <li>Shopify Ads reaching merchants directly on Shopify</li>
+                  <li>Facebook/Instagram Ads targeting merchants with Subscription Pixel</li>
+                  <li>TikTok Ads targeting Shops with Subscription Pixel</li>
+                  <li>Google (App Campaigns) & YouTube Ads with Subscription Pixel</li>
+                  <li>Apple App Store and Google Play Store Ads</li>
                 </ul>
               </CardContent>
             </Card>
@@ -959,24 +982,69 @@ const InvestorPackage = () => {
               <CardContent>
                 <h4 className="font-bold">Content Marketing Strategy</h4>
                 <ul className="list-disc list-inside space-y-1 mt-2">
-                  <li>Educational Content: Tutorials, webinars, success stories</li>
-                  <li>SEO Strategy: Long-tail keyword targeting for creator searches</li>
-                  <li>Social Media: Showcase creator success stories and platform features</li>
+                  <li>Educational Content: Tutorials, webinars, business & marketing advice</li>
+                  <li>SEO Strategy: Long-tail keyword targeting for creator searches (Google Merchant / Shopping Tabs/Results / Creators FF Product Page)</li>
+                  <li>Social Media: Showcase creator success stories, customer testimonials and platform features</li>
                   <li>Influencer Partnerships: Collaborate with creator economy influencers</li>
                 </ul>
-                <h4 className="font-bold mt-4">Community Building</h4>
+                <h4 className="font-bold mt-4">Quick Updates</h4>
                 <ul className="list-disc list-inside space-y-1 mt-2">
-                  <li>Communities: FreshForums, Instagram, Facebook, Substack, X (Twitter), Discord, Reddit</li>
-                  <li>Manager Networks: Professional service provider partnerships</li>
-                  <li>Success Showcases: Monthly creator spotlights and case studies</li>
-                  <li>Educational Resources: Academy, certification programs, workshops</li>
+                  <li>Instagram (Posts/reels)</li>
+                  <li>TikTok (Videos)</li>
+                  <li>Substack (Posts)</li>
+                  <li>X/Twitter (Posts/Spaces)</li>
+                  <li>Emails (Newsletter)</li>
+                  <li>YouTube (Shorts)</li> 
                 </ul>
               </CardContent>
             </Card>
             <Card>
-              <CardHeader><CardTitle>Exit Strategy</CardTitle></CardHeader>
+              <CardHeader><CardTitle>Google App Campaigns</CardTitle></CardHeader>
               <CardContent>
-                <p>Possible exit scenarios include strategic acquisition by major technology companies such as Shopify, Apple, Meta/TikTok, Google, or Amazon, who may be interested in our AI capabilities, creator economy solutions, and social commerce integrations.</p>
+                <p>App campaigns can help you promote your apps across Google’s largest properties including Search, Google Play, YouTube, Discover on Google Search, and the Google Display Network.</p>
+                <h4 className="font-bold mt-4">Benefits</h4>
+                <ul className="list-disc list-inside space-y-1 mt-2">
+                  <li>Holistic setup: Unified data & ad optimization across networks and formats. (App Store, Google Search, Gmail, YouTube etc.) </li>
+                  <li>Automated optimization: Google Ads will test different ad combinations and serve the best-performing ads.</li>
+                  <li>Google partners: Your ads can appear across multiple Google partner networks, reaching a larger potential user base.</li>
+                  <li>Focus on conversions: You can optimize your campaigns to drive specific actions, such as app installs or in-app purchases.</li>
+                  <li>Effortless performance tracking: You can check how your campaigns are performing and make adjustments as needed.</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader><CardTitle>Apple App Stores Ads</CardTitle></CardHeader>
+              <CardContent>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Drives app discovery and downloads on the App Store, with over 650 million weekly visitors.</li>
+                  <li>Highly effective, with conversion rates over 60% for search results ads.</li>
+                  <li>95% of downloads happen within a minute of an ad tap.</li>
+                  <li>Various ad placements are available across the App Store to maximize visibility, including the Today Tab, Search Tab, Search Results, and Product Pages.</li>
+                  <li>Campaign management features include flexible creative options with custom product pages, deep links, built-in optimization, and a cost-per-tap (CPT) pricing model.</li>
+                  <li>For measurement, Apple Ads offers at-a-glance results, personalized keyword and bid recommendations, powerful analytics via Insights, and comprehensive API solutions.</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader><CardTitle>Instagram Ads</CardTitle></CardHeader>
+              <CardContent>
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Instagram Ads ran through Facebook with pixel optimization for in-app subscriptions.</li>
+                  <li>Partnering with Creators to launch FreshFront campaigns for their Products/Merch on the Instagram Creator Marketplace.</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader><CardTitle>Shopify Ads</CardTitle></CardHeader>
+              <CardContent>
+                <p>Detailed targeting to 25+ million merchants on Shopify</p>
+                <h4 className="font-bold mt-4">Ad Types & Placements</h4>
+                <p>Shopify offers three main ad types:</p>
+                <ul className="list-disc list-inside space-y-1 mt-2">
+                  <li>Search results: Appear when merchants search for relevant terms.</li>
+                  <li>Category and subcategory pages: Display within specific app categories.</li>
+                  <li>Homepage: Featured on the Shopify App Store's main page</li>
+                </ul>
               </CardContent>
             </Card>
           </div>
@@ -989,11 +1057,10 @@ const InvestorPackage = () => {
           <Card>
             <CardHeader><CardTitle>Proposed Investment Structure</CardTitle></CardHeader>
             <CardContent>
-              <h4 className="font-bold">Equity Investment</h4>
+              <h4 className="font-bold">Investment</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
-                <li><strong>Investment Amount:</strong> $113,900</li>
-                <li><strong>Valuation:</strong> $950K - $1.42M pre-money</li>
-                <li><strong>Investment Type:</strong> Convertible note or Series Seed</li>
+                <li><strong>Stage:</strong> Seed</li>
+                <li><strong>Investment Type:</strong> SAFE / Convertible Note</li>
               </ul>
               <h4 className="font-bold mt-4">Investor Benefits</h4>
               <ul className="list-disc list-inside space-y-1 mt-2">
@@ -1010,7 +1077,7 @@ const InvestorPackage = () => {
             <CardHeader><CardTitle>Contact Information & Next Steps</CardTitle></CardHeader>
             <CardContent>
               <p>For additional information, technical demonstrations, or to begin the due diligence process, please contact:</p>
-              <p className="font-bold my-2">FreshFront Investment Team</p>
+              <p className="font-bold my-2">FreshFront Contact Info</p>
               <p>Email: info@freshfront.co</p>
               <p>Phone: 647-615-2293</p>
               <p>Website: www.freshfront.co</p>
